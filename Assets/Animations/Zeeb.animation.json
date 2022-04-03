@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.Zeeb.flying": {
+			"loop": true,
+			"bones": {
+				"rightwing_bone": {
+					"rotation": [-1815, 0, 0]
+				},
+				"leftwing_bone": {
+					"rotation": [-2180.38587, -0.39656, 1.92406]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

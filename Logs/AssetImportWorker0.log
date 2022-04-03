@@ -1,0 +1,271 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.13f1 (90b6766da538) revision 9483894'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16065 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/rodri/Documents/TheUglyDucling
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55627
+Successfully changed project path to: C:/Users/rodri/Documents/TheUglyDucling
+C:/Users/rodri/Documents/TheUglyDucling
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 66.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.13f1 (90b6766da538)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/rodri/Documents/TheUglyDucling/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX350 (ID=0x1c94)
+    Vendor:   NVIDIA
+    VRAM:     1979 MB
+    Driver:   27.21.14.6259
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.13f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.006762 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 65.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.489 seconds
+Domain Reload Profiling:
+	ReloadAssembly (490ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (361ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (78ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (54ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004728 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 82.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.800 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1801ms)
+		BeginReloadAssembly (231ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (1439ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (329ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (909ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (633ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4820 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 5278.
+Memory consumption went from 188.0 MB to 187.3 MB.
+Total: 4.214700 ms (FindLiveObjects: 0.343900 ms CreateObjectMapping: 0.154400 ms MarkObjects: 3.421600 ms  DeleteObjects: 0.293800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 771172.858459 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351c0d22959dd10cd34ec023f315c5f1') in 0.141165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.069852 seconds.
+  path: Assets/Animations/Zeeb.animation.json
+  artifactKey: Guid(b72fb5beaf257bb4792a11ea37fc2095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Zeeb.animation.json using Guid(b72fb5beaf257bb4792a11ea37fc2095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0cd38b4c7301c6bed5c12d7238d53f') in 0.011524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.100303 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4a5ae0a45a1498f7d32d98c50a14e2') in 0.042917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.602129 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad95409f4d051a287fff032db7b7109') in 0.052827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.061501 seconds.
+  path: Assets/Models/Animals/Zeeb.mtl
+  artifactKey: Guid(1753c2b788cf3b348864d378b9f9b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.mtl using Guid(1753c2b788cf3b348864d378b9f9b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97900d02f771ce162bec999a4b1a8db') in 0.004344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.781090 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7c083a5488fa157771899656929f1d') in 0.021469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.924123 seconds.
+  path: Assets/Materials/AtlasTerrain.mat
+  artifactKey: Guid(7015c6f0ed04ecc4a9abf56615f3717b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/AtlasTerrain.mat using Guid(7015c6f0ed04ecc4a9abf56615f3717b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf9c7b988178a4d982df5a242f08a99') in 0.027971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.046157 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37c0e42dec4ba565c939081ba57b9d2') in 0.016334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 402.620178 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f62492d12750da9d19e86f8b64b5be98') in 0.029370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.458592 seconds.
+  path: Assets/Prefabs/Zeeb.prefab
+  artifactKey: Guid(d124bf27a9898ff409fffc7e0dce34d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Zeeb.prefab using Guid(d124bf27a9898ff409fffc7e0dce34d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1be2f4f13b732620c50d7ea78ab1b21') in 0.009510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 501.921660 seconds.
+  path: Assets/Materials/Zeeb.mat
+  artifactKey: Guid(4e50208f624354649bb89dcf0d35b660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Zeeb.mat using Guid(4e50208f624354649bb89dcf0d35b660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5971bffa66a18c93079551321d757398') in 0.020868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 177.973947 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80f67a6ee718338b34b12ce33b9aaa0') in 0.020619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.728763 seconds.
+  path: Assets/Models/Animals/Zeeb.obj
+  artifactKey: Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Animals/Zeeb.obj using Guid(0925943536d9d004ba47590aee531d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e033b2589b72bbf038ba0df1673eb45') in 0.039312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.264300 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(2c5d09a787bbb3b49b0fba58f6e4fa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(2c5d09a787bbb3b49b0fba58f6e4fa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365c24656e50c7fc037838e86c2d4bc7') in 0.002394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.674457 seconds.
+  path: Assets/Animations/Zeeb.controller
+  artifactKey: Guid(4010c365ff07a3d4fa585efbdbd3874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Zeeb.controller using Guid(4010c365ff07a3d4fa585efbdbd3874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8881cba46f794f62289d599d9d59b0') in 0.004473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 150.118439 seconds.
+  path: Assets/Animations/Flying.anim
+  artifactKey: Guid(e510830825ce7ff42b27afe3c3820de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Flying.anim using Guid(e510830825ce7ff42b27afe3c3820de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b3f8b50de65807d2b586d09ece1869') in 0.004006 seconds 
