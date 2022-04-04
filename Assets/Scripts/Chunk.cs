@@ -20,7 +20,7 @@ public class Chunk : MonoBehaviour
     
     public MeshUtils.BlockType[] chunkData;
 
-    void BuildChunk()
+    public void BuildChunk()
     {
         int blockCount = width * depth * height;
 
