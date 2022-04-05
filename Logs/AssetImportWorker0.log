@@ -191,3 +191,9 @@ Received Import Request.
   path: Assets/Prefabs/Generator.prefab
   artifactKey: Guid(119b5fa72e14a4c49a736603288aabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Generator.prefab using Guid(119b5fa72e14a4c49a736603288aabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95eb670abc9a7857026aec2e8b8c3b3') in 0.008590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 123.480160 seconds.
+  path: Assets/Scripts/Chunk.cs
+  artifactKey: Guid(ccfdf87dc67494ca58667d5771f48b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Chunk.cs using Guid(ccfdf87dc67494ca58667d5771f48b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c21ed92ccad4970eaa7b4537712aac') in 0.009732 seconds 
