@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atlas: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
   width: 16
-  height: 256
+  height: 32
   depth: 16
   chunkData: 
