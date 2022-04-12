@@ -12,7 +12,7 @@ public class Chunk : MonoBehaviour
 
     public int width = 16;
 
-    public int height = 32;
+    public int height = 256;
     
     public int depth = 16;
 
