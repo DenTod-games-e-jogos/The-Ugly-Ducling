@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 91
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 103
+  controlID: 92
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 104
+  controlID: 93
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -504,9 +504,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.58906865, y: 2.28125, z: -0.5864535}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.58906865, y: 2.28125, z: -0.5864535}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -553,13 +553,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.093456276, y: 0.90530133, z: -0.31681806, w: -0.26735434}
+    m_Target: {x: -0.0912932, y: -0.124001615, z: 0.0112911435, w: -0.98809934}
     speed: 2
-    m_Value: {x: -0.092973664, y: 0.9056304, z: -0.31693307, w: -0.26597527}
+    m_Value: {x: -0.09130189, y: -0.12250839, z: 0.011153195, w: -0.988196}
   m_Size:
-    m_Target: 0.8717935
+    m_Target: 2.4893396
     speed: 2
-    m_Value: 0.8342522
+    m_Value: 2.6066384
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -694,8 +694,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -330.72003
     m_HBaseRangeMax: 330.72003
-    m_VBaseRangeMin: -162.8
-    m_VBaseRangeMax: 162.8
+    m_VBaseRangeMin: -154.40001
+    m_VBaseRangeMax: 154.40001
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -712,11 +712,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 826.80005
-      height: 407
+      height: 386
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 413.40002, y: 203.5}
+    m_Translation: {x: 413.40002, y: 193}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -724,9 +724,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -413.40002
-      y: -203.5
+      y: -193
       width: 826.80005
-      height: 407
+      height: 386
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1033.5, y: 508.75}
@@ -876,22 +876,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\rodri\Documents\The-Ugly-Ducling
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e66a0000
-    m_LastClickedID: 27366
-    m_ExpandedIDs: 0000000046690000486900004a6900004c6900004e69000000ca9a3b
+    m_SelectedIDs: 32690000
+    m_LastClickedID: 26930
+    m_ExpandedIDs: 00000000326900003469000036690000386900003a690000d86a0000406b0000426b0000466b0000506b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -919,7 +919,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046690000486900004a6900004c6900004e690000
+    m_ExpandedIDs: 00000000326900003469000036690000386900003a690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
