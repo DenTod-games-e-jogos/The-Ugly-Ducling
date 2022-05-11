@@ -4,6 +4,7 @@
         "icount",
         "Mathf",
         "Neighbour",
+        "Quartenion",
         "tris",
         "vcount",
         "verts"
