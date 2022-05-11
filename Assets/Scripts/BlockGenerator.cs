@@ -10,9 +10,9 @@ public class BlockGenerator : MonoBehaviour
     {
         for (int x = 0; x < 10; x++)
         {
-            for (int z = 0; z < length; z++)
+            for (int z = 0; z < 10; z++)
             {
-                Instantiate(Tree, new Vector3(x, 0, z), Quartenion.identity);
+                Instantiate(Tree, new Vector3(x, -0.5f, z), Quaternion.identity);
             }
         }
     }
