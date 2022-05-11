@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 377919429}
   - component: {fileID: 377919428}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
         type: 3}
@@ -635,6 +635,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 806595757409594290, guid: 119b5fa72e14a4c49a736603288aabc6,
+        type: 3}
+      propertyPath: Tree
+      value: 
+      objectReference: {fileID: 8492686938419939029, guid: ae6f3dafa7cbdff4a86f3ee0825d533e,
+        type: 3}
     - target: {fileID: 8936774100743409332, guid: 119b5fa72e14a4c49a736603288aabc6,
         type: 3}
       propertyPath: m_Name
