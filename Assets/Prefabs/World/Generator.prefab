@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8936774100743409338}
-  - component: {fileID: 768695356}
+  - component: {fileID: 7781426525246566956}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768695356
+--- !u!114 &7781426525246566956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,12 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8936774100743409332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8f20f854888c3469ac0113feb3f400, type: 3}
+  m_Script: {fileID: 11500000, guid: 400afb88abb65d54685a2b7a26525c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  groundAtlas: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
-  waterAtlas: {fileID: 2100000, guid: 97b3c33cf48efe04db0bf9eecc959fbc, type: 2}
-  segmentHeight: 16
-  segmentSize: 16
-  waterHeight: 60
+  Tree: {fileID: 8492686938419939029, guid: ae6f3dafa7cbdff4a86f3ee0825d533e, type: 3}

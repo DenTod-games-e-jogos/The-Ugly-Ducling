@@ -462,12 +462,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 55010a2feea975d43bc7451c3b7a1b58, type: 3}
---- !u!1 &2094013005 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2685458983609587416, guid: b941dfbbaad3ca7429a8b42004f19b68,
-    type: 3}
-  m_PrefabInstance: {fileID: 2992012371789080287}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2992012371789080287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -544,10 +538,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 768695356, guid: 119b5fa72e14a4c49a736603288aabc6, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 2094013005}
     - target: {fileID: 8936774100743409332, guid: 119b5fa72e14a4c49a736603288aabc6,
         type: 3}
       propertyPath: m_Name
