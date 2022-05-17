@@ -239,6 +239,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!20 &630235059 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1319697290, guid: b941dfbbaad3ca7429a8b42004f19b68,
+    type: 3}
+  m_PrefabInstance: {fileID: 2992012371789080287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2073086325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,6 +426,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 523883743087077386, guid: 119b5fa72e14a4c49a736603288aabc6,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 630235059}
     - target: {fileID: 8936774100743409332, guid: 119b5fa72e14a4c49a736603288aabc6,
         type: 3}
       propertyPath: m_Name
