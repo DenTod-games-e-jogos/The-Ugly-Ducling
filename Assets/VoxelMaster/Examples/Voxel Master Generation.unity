@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18230191, g: 0.22486997, b: 0.28911608, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -153,7 +153,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9934077, b: 0.9044118, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5046214dc1f574184dbf667ca67b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1010679959}
+  camera: {fileID: 0}
   generationDistance: 128
   updateDistance: 16
   chunksPerFrame: 4
@@ -409,6 +409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a7d53538eff0e4aa6de9e0439494b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locked: 1
+  locked: 0
   speed: 100
   terrain: {fileID: 961217835}
