@@ -406,9 +406,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010679955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3a7d53538eff0e4aa6de9e0439494b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locked: 0
-  speed: 100
-  terrain: {fileID: 961217835}
+  speed: 5
