@@ -453,11 +453,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark2
       objectReference: {fileID: 0}
-    - target: {fileID: 2685458983609587416, guid: b941dfbbaad3ca7429a8b42004f19b68,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 3319005707623074914, guid: b941dfbbaad3ca7429a8b42004f19b68,
         type: 3}
       propertyPath: m_RootOrder
