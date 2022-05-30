@@ -14,76 +14,49 @@ public class PlayerMovement : MonoBehaviour
     float runningSpeed = 10.0f;
     
     float vaxis = 5.0f, haxis = 6.0f;
+
+    float jumpHeight = 60.0f;
+
+    float gravityValue = -1.5f;
     
-    public bool isJumping, isJumpingAlt, isGrounded = false;
+    public bool isJumping, isJumpingAlt, isGrounded, groundedPlayer = false;
     
     Vector3 movement;
 
     CharacterController Controller;
+
+    Vector3 playerVelocity;
 
     void Awake()
     {
         Controller = GetComponent<CharacterController>();
     }
 
-    void Start()
-    {
-        print("Initialized: (" + this.name + ")");
-    }
-
     void Update()
     {
-        transform.Rotate(0, Input.GetAxis("Horizontal") * RotateSpeed, 0);
+        isGrounded = Controller.isGrounded;
 
-        Vector3 Forward = transform.TransformDirection(Vector3.forward);
-
-        float CurSpeed = Speed * Input.GetAxis("Vertical");
+        if (groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
         
-        Controller.SimpleMove(Forward * CurSpeed);
-    }
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-    void FixedUpdate()
-    {
-        vaxis = Input.GetAxis("Vertical");
+        Controller.Move(move * Time.deltaTime * Speed);
 
-        haxis = Input.GetAxis("Horizontal");
-        
-        isJumping = Input.GetButton("Jump");
-        
-        isJumpingAlt = Input.GetKey(KeyCode.Joystick1Button0);
-
-        runningSpeed = vaxis;
-
-        if (isGrounded)
+        if (move != Vector3.zero)
         {
-            movement = new Vector3(0, 0f, runningSpeed * 8);
-            
-            movement = transform.TransformDirection(movement);
-
-            isGrounded = Controller.isGrounded;      
+            gameObject.transform.forward = move;
         }
 
-        else
+        if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
-            movement *= 0.70f;
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
 
-        if ((isJumping || isJumpingAlt) && isGrounded)
-        {
-            print(this.ToString() + " isJumping = " + isJumping);
-        }
+        playerVelocity.y += gravityValue * Time.deltaTime;
 
-        if ((Input.GetAxis("Vertical") != 0f || Input.GetAxis("Horizontal") != 0f) && !isJumping && isGrounded)
-        {
-            if (Input.GetAxis("Vertical") >= 0)
-            {
-                transform.Rotate(new Vector3(0, haxis * rotationSpeed, 0));
-            }
-
-            else
-            {
-                transform.Rotate(new Vector3(0, -haxis * rotationSpeed, 0));
-            }
-        }
+        Controller.Move(playerVelocity * Time.deltaTime);
     }
 }
