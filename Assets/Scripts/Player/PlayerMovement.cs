@@ -1,12 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour 
 {
-    CharacterController Controller;
-
     float Speed = 3.0f;
 
-    public Transform Cam;
+    float RotateSpeed = 3.0f;
+
+    CharacterController Controller;
 
     void Awake()
     {
@@ -15,28 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float Horizontal = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        transform.Rotate(0, Input.GetAxis("Horizontal") * RotateSpeed, 0);
 
-        float Vertical = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        Vector3 Forward = transform.TransformDirection(Vector3.forward);
 
-        Vector3 Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
-
-        Movement.y = 0f;
-
-        Controller.Move(Movement);
-
-        if (Movement.magnitude != 0f)
-        {
-            transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") 
-            * Cam.GetComponent<CameraMove>().Sensivity * Time.deltaTime);
-
-            Quaternion CamRotation = Cam.rotation;
-
-            CamRotation.x = 0f;
-            
-            CamRotation.z = 0f;
-            
-            transform.rotation = Quaternion.Lerp(transform.rotation, CamRotation, 0.1f);
-        }
+        float CurSpeed = Speed * Input.GetAxis("Vertical");
+        
+        Controller.SimpleMove(Forward * CurSpeed);
     }
 }

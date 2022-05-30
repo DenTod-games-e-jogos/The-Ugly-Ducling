@@ -10,13 +10,13 @@ public class CameraMove : MonoBehaviour
 
     public Transform Player;
 
-    public float distance = 10.0f;
+    public float distance = 2.0f;
 
     float currentX = 0.0f;
 
     float currentY = 0.0f;
 
-    public float Sensivity = 4.0f;
+    public float Sensivity = 2.0f;
 
     void LateUpdate()
     {

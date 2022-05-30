@@ -325,7 +325,6 @@ GameObject:
   - component: {fileID: 9142091060879723783}
   - component: {fileID: 6653184538619150057}
   - component: {fileID: 1095147925830042071}
-  - component: {fileID: 5200587241309716058}
   m_Layer: 0
   m_Name: Mark2
   m_TagString: Player
@@ -417,23 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e15f0746298514ebe2e75d1fa8fe50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 1319697291}
---- !u!114 &5200587241309716058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2685458983609587416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a9d34441f14f641a352a1010cdde78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookAt: {fileID: 3319005707623074914}
-  Player: {fileID: 3319005707623074914}
-  distance: 10
-  Sensivity: 4
 --- !u!1 &3082597412273618659
 GameObject:
   m_ObjectHideFlags: 0
