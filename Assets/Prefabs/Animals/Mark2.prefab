@@ -399,9 +399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e15f0746298514ebe2e75d1fa8fe50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isJumping: 0
-  isJumpingAlt: 0
+  isJumping: 1
+  isJumpingAlt: 1
   isGrounded: 0
+  groundedPlayer: 0
 --- !u!1 &3082597412273618659
 GameObject:
   m_ObjectHideFlags: 0

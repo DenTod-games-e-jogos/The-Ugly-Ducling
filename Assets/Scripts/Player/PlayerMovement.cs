@@ -15,11 +15,11 @@ public class PlayerMovement : MonoBehaviour
     
     float vaxis = 5.0f, haxis = 6.0f;
 
-    float jumpHeight = 6.0f;
+    float jumpHeight = 15.0f;
 
     float gravityValue = -1.5f;
     
-    public bool isJumping, isJumpingAlt, isGrounded, groundedPlayer;
+    public bool isJumping, isJumpingAlt, isGrounded, groundedPlayer = false;
     
     Vector3 movement;
 
@@ -38,10 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (groundedPlayer && playerVelocity.y < 0)
         {
-            isGrounded = false;
-
-            isJumping = true;
-
             playerVelocity.y = 0f;
         }
         
