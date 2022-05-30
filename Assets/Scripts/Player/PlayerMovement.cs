@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = Move;
         }
 
-        if (Input.GetButtonDown("Jump") && GroundedPlayer)
+        if (Input.GetKeyDown(KeyCode.Space) && GroundedPlayer)
         {
             PlayerVelocity.y += Mathf.Sqrt(JumpHeight * -3.0f * GravityValue);
         }
