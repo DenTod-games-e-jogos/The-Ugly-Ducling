@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool GroundedPlayer;
 
-    float JumpHeight = 1.0f;
+    float JumpHeight = 7.0f;
 
     float GravityValue = -1.5f;
 
@@ -40,9 +40,9 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = Move;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && GroundedPlayer)
+        if (Input.GetButtonDown("Jump") && GroundedPlayer)
         {
-            PlayerVelocity.y += Mathf.Sqrt(JumpHeight * -3.0f * GravityValue);
+            transform.position += Vector3.up * JumpHeight * 10.0f * Time.deltaTime;
         }
 
         PlayerVelocity.y += GravityValue * Time.deltaTime;
