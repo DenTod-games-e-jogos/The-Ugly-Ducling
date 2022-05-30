@@ -13,7 +13,9 @@ public class PlayerMovement : MonoBehaviour
     
     float runningSpeed;
     
-    float vaxis, haxis;
+    float vaxis = 5.0f;
+
+    float haxis = 6.0f;
     
     public bool isJumping, isJumpingAlt, isGrounded = false;
     
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log(this.ToString() + " isJumping = " + isJumping);
 
-            GetComponent<Rigidbody>().AddForce(Vector3.up * 150);
+            Rb.AddForce(Vector3.up * 150);
         }
 
         if ((Input.GetAxis("Vertical") != 0f || Input.GetAxis("Horizontal") != 0f) && !isJumping && isGrounded)
