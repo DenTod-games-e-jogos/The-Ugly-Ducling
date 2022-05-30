@@ -13,9 +13,7 @@ public class PlayerMovement : MonoBehaviour
     
     float runningSpeed;
     
-    float vaxis = 5.0f;
-
-    float haxis = 6.0f;
+    float vaxis = 5.0f, haxis = 6.0f;
     
     public bool isJumping, isJumpingAlt, isGrounded = false;
     
@@ -30,6 +28,17 @@ public class PlayerMovement : MonoBehaviour
         Controller = GetComponent<CharacterController>();
 
         Rb = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        transform.Rotate(0, Input.GetAxis("Horizontal") * RotateSpeed, 0);
+
+        Vector3 Forward = transform.TransformDirection(Vector3.forward);
+
+        float CurSpeed = Speed * Input.GetAxis("Vertical");
+        
+        Controller.SimpleMove(Forward * CurSpeed);
     }
 
     void Start()
