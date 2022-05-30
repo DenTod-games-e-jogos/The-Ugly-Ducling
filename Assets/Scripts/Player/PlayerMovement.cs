@@ -56,7 +56,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Rb.velocity = new Vector3(0, 10, 0);
 
+            PlayerVelocity.y += Mathf.Sqrt(JumpHeight * -3.0f * GravityValue);
+
             IsMoving = true;
+
+            IsJumpPressed = true;
         }
 
         PlayerVelocity.y += GravityValue * Time.deltaTime;
