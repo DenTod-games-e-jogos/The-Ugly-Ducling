@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     float RotateSpeed = 3.0f;
 
-    float moveSpeed = 2;
+    float moveSpeed = 5.0f;
 
     float rotationSpeed = 4;
     
@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
         Rb = GetComponent<Rigidbody>();
     }
 
+    void Start()
+    {
+        print("Initialized: (" + this.name + ")");
+    }
+
     void Update()
     {
         transform.Rotate(0, Input.GetAxis("Horizontal") * RotateSpeed, 0);
@@ -39,11 +44,6 @@ public class PlayerMovement : MonoBehaviour
         float CurSpeed = Speed * Input.GetAxis("Vertical");
         
         Controller.SimpleMove(Forward * CurSpeed);
-    }
-
-    void Start()
-    {
-        Debug.Log("Initialized: (" + this.name + ")");
     }
 
     void FixedUpdate()
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         if ((isJumping || isJumpingAlt) && isGrounded)
         {
-            Debug.Log(this.ToString() + " isJumping = " + isJumping);
+            print(this.ToString() + " isJumping = " + isJumping);
 
             Rb.AddForce(Vector3.up * 150);
         }
@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Entered");
+        print("Entered");
 
         if (collision.gameObject.CompareTag("VoxelTerrain"))
         {
@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionExit(Collision collision)
     {
-        Debug.Log("Exited");
+        print("Exited");
 
         if (collision.gameObject.CompareTag("VoxelTerrain"))
         {
