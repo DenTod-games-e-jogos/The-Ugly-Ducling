@@ -18,10 +18,10 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Rotate(0, Input.GetAxis("Horizontal") * RotateSpeed, 0);
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 Forward = transform.TransformDirection(Vector3.forward);
 
         float CurSpeed = Speed * Input.GetAxis("Vertical");
         
-        Controller.SimpleMove(forward * curSpeed);
+        Controller.SimpleMove(Forward * CurSpeed);
     }
 }
