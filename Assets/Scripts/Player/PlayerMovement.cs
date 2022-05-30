@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Entered");
 
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("VoxelTerrain"))
         {
             isGrounded = true;
         }
@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Exited");
 
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("VoxelTerrain"))
         {
             isGrounded = false;
         }
