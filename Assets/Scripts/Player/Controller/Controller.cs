@@ -8,13 +8,13 @@ public class Controller : MonoBehaviour
     [SerializeField] float _Speed = 100;
     PlayerControler _Input;
     Vector2 _Movement;
-    Rigidbody2D _Rigidbody;
+    Rigidbody _Rigidbody;
     Animator _Anim;
 
     private void Awake() {
         _Input = new PlayerControler();
         _Input.Enable();
-        _Rigidbody = GetComponent<Rigidbody2D>();
+        _Rigidbody = GetComponent<Rigidbody>();
         _Anim = GetComponent<Animator>();
     }
 
