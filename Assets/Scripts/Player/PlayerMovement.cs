@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     float JumpHeight = 1.0f;
 
-    float GravityValue = -9.81f;
+    float GravityValue = 0.5f;
 
     void Awake()
     {
