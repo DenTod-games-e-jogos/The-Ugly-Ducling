@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     float gravityValue = -1.5f;
     
-    public bool isJumping, isJumpingAlt, isGrounded, groundedPlayer = false;
+    bool isJumping, isJumpingAlt, isGrounded, groundedPlayer;
     
     Vector3 movement;
 
@@ -38,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (groundedPlayer && playerVelocity.y < 0)
         {
+            isGrounded = false;
+
+            isJumping = true;
+
             playerVelocity.y = 0f;
         }
         
@@ -50,8 +54,10 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = move;
         }
 
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
+        if (Input.GetButtonDown("Jump") && groundedPlayer == true)
         {
+            isJumpingAlt = true;
+            
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
 
