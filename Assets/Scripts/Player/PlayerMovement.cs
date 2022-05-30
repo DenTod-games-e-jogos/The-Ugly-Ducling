@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     float rotationSpeed = 4;
     
-    float runningSpeed;
+    float runningSpeed = 10.0f;
     
     float vaxis = 5.0f, haxis = 6.0f;
     
