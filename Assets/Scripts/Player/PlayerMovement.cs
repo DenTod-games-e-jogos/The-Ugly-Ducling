@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool IsMoving = false;
 
-    float JumpHeight = 7.0f;
+    float JumpHeight = 700.0f;
 
     float GravityValue = -1.5f;
 
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (GroundedPlayer && IsJumpPressed)
         {
-            Rb.velocity = new Vector3(0, 10, 0);
+            Rb.velocity = new Vector3(0, 500, 0);
 
             PlayerVelocity.y += Mathf.Sqrt(JumpHeight * -3.0f * GravityValue);
 
