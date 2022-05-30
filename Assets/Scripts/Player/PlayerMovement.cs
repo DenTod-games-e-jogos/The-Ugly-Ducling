@@ -1,9 +1,12 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour 
 {
     CharacterController Controller;
+
+    Rigidbody Rb;
 
     float Speed = 3.0f;
 
@@ -13,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
     bool GroundedPlayer;
 
+    bool IsJumpPressed = false;
+
+    bool IsMoving = false;
+
     float JumpHeight = 7.0f;
 
     float GravityValue = -1.5f;
@@ -20,12 +27,17 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         Controller = GetComponent<CharacterController>();
+
+        Rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        GroundedPlayer = Controller.isGrounded;
+        IsJumpPressed = Input.GetButtonDown("Jump");
+    }
 
+    void FixedUpdate()
+    {
         if (GroundedPlayer && PlayerVelocity.y < 0)
         {
             PlayerVelocity.y = 0.0f;
@@ -40,9 +52,11 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = Move;
         }
 
-        if (Input.GetButtonDown("Jump") && GroundedPlayer)
+        if (GroundedPlayer && IsJumpPressed)
         {
-            transform.position += Vector3.up * JumpHeight * 10.0f * Time.deltaTime;
+            Rb.velocity = new Vector3(0, 10, 0);
+
+            IsMoving = true;
         }
 
         PlayerVelocity.y += GravityValue * Time.deltaTime;

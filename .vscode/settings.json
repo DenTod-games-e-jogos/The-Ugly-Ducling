@@ -12,6 +12,7 @@
         "posz",
         "Quartenion",
         "Raycast",
+        "Rigidbody",
         "Scriptable",
         "tris",
         "vcount",
