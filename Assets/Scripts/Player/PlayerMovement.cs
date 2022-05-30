@@ -21,13 +21,9 @@ public class PlayerMovement : MonoBehaviour
 
     CharacterController Controller;
 
-    Rigidbody Rb;
-
     void Awake()
     {
         Controller = GetComponent<CharacterController>();
-
-        Rb = GetComponent<Rigidbody>();
     }
 
     void Start()
@@ -62,7 +58,9 @@ public class PlayerMovement : MonoBehaviour
         {
             movement = new Vector3(0, 0f, runningSpeed * 8);
             
-            movement = transform.TransformDirection(movement);      
+            movement = transform.TransformDirection(movement);
+
+            isGrounded = Controller.isGrounded;      
         }
 
         else
@@ -70,13 +68,9 @@ public class PlayerMovement : MonoBehaviour
             movement *= 0.70f;
         }
 
-        Rb.AddForce(movement * moveSpeed);
-
         if ((isJumping || isJumpingAlt) && isGrounded)
         {
             print(this.ToString() + " isJumping = " + isJumping);
-
-            Rb.AddForce(Vector3.up * 150);
         }
 
         if ((Input.GetAxis("Vertical") != 0f || Input.GetAxis("Horizontal") != 0f) && !isJumping && isGrounded)
@@ -90,26 +84,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.Rotate(new Vector3(0, -haxis * rotationSpeed, 0));
             }
-        }
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        print("Entered");
-
-        if (collision.gameObject.CompareTag("VoxelTerrain"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        print("Exited");
-
-        if (collision.gameObject.CompareTag("VoxelTerrain"))
-        {
-            isGrounded = false;
         }
     }
 }
