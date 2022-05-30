@@ -4,6 +4,7 @@
         "Anglesy",
         "Attemped",
         "Behaviour",
+        "haxis",
         "icount",
         "Lerp",
         "Mathf",
@@ -16,6 +17,7 @@
         "Scriptable",
         "Sensivity",
         "tris",
+        "vaxis",
         "vcount",
         "verts",
         "Voxel"

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3796937044480490173}
   m_Layer: 0
   m_Name: Generator
-  m_TagString: Untagged
+  m_TagString: VoxelTerrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
