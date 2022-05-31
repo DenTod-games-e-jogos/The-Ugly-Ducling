@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        isGrounded = Controller.isGrounded;
+        isGrounded = !Controller.isGrounded;
 
         if (groundedPlayer && playerVelocity.y < 0)
         {
@@ -50,9 +50,16 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = move;
         }
 
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
+        if (Input.GetButtonDown("Jump"))
         {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
+            print("Botão de pulo apertado");
+
+            print("Vai pular?" + groundedPlayer);
+            
+            if (groundedPlayer)
+            {
+                playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
+            }
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
