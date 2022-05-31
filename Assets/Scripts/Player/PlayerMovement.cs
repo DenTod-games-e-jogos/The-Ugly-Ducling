@@ -19,7 +19,11 @@ public class PlayerMovement : MonoBehaviour
 
     float gravityValue = -1.5f;
     
-    public bool isJumping, isJumpingAlt, isGrounded;
+    public bool isJumping = false;
+
+    public bool isJumpingAlt = false;
+
+    public bool isGrounded = false;
     
     Vector3 movement;
 
@@ -39,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && playerVelocity.y < 0)
         {
+            isGrounded = true;
+            
             playerVelocity.y = 0.0f;
         }
         
