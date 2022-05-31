@@ -24,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 movement;
 
     CharacterController Controller;
-
+    
+    [SerializeField]
     Vector3 playerVelocity;
 
     void Awake()
@@ -59,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             if (groundedPlayer == false)
             {
                 groundedPlayer = true;
-                
+
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
             }
         }
