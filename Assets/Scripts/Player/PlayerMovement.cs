@@ -56,8 +56,10 @@ public class PlayerMovement : MonoBehaviour
 
             print("Vai pular?" + groundedPlayer);
 
-            if (groundedPlayer)
+            if (groundedPlayer == false)
             {
+                groundedPlayer = true;
+                
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
             }
         }
