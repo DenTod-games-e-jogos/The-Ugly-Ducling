@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 3319005707623074914}
   - component: {fileID: 8714279254115997208}
   - component: {fileID: 9142091060879723783}
-  - component: {fileID: 1095147925830042071}
+  - component: {fileID: 8541725138154000642}
   m_Layer: 0
   m_Name: Mark2
   m_TagString: Player
@@ -387,7 +387,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.05, z: 0}
---- !u!114 &1095147925830042071
+--- !u!114 &8541725138154000642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,8 +399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e15f0746298514ebe2e75d1fa8fe50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isJumping: 1
-  isJumpingAlt: 1
+  isJumping: 0
+  isJumpingAlt: 0
   isGrounded: 0
   groundedPlayer: 0
 --- !u!1 &3082597412273618659
