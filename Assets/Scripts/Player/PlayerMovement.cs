@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
     float vaxis = 5.0f, haxis = 6.0f;
 
-    float jumpHeight = 20.0f;
+    float jumpHeight = 60.0f;
 
     float gravityValue = -1.5f;
     
@@ -39,6 +39,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && playerVelocity.y < 0)
         {
+            isGrounded = true;
+
+            Controller.isGrounded = true;
+
             playerVelocity.y = 0.0f;
         }
         
@@ -59,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (isGrounded)
             {
-                playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
+                playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
             }
         }
 
