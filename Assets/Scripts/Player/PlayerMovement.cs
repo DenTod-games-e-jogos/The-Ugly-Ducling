@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
             print("Botão de pulo apertado");
 
             print("Vai pular?" + groundedPlayer);
-            
+
             if (groundedPlayer)
             {
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
