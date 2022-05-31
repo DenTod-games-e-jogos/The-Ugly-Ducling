@@ -39,10 +39,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && playerVelocity.y < 0)
         {
-            isGrounded = true;
-
-            Controller.isGrounded = true;
-
             playerVelocity.y = 0.0f;
         }
         
