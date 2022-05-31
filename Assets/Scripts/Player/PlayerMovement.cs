@@ -44,17 +44,17 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && playerVelocity.y < 0)
         {
             isGrounded = true;
-            
+
             playerVelocity.y = 0.0f;
         }
         
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
 
-        Controller.Move(move * Time.deltaTime * Speed);
+        Controller.Move(movement * Time.deltaTime * Speed);
 
-        if (move != Vector3.zero)
+        if (movement != Vector3.zero)
         {
-            gameObject.transform.forward = move;
+            gameObject.transform.forward = movement;
         }
 
         if (Input.GetButtonDown("Jump"))
