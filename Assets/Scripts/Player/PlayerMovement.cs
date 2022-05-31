@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
     float vaxis = 5.0f, haxis = 6.0f;
 
-    float jumpHeight = 15.0f;
+    float jumpHeight = 20.0f;
 
     float gravityValue = -1.5f;
     
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
