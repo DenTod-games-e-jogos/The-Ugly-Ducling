@@ -19,12 +19,12 @@ public class PlayerMovement : MonoBehaviour
 
     float gravityValue = -1.5f;
     
-    public bool isJumping, isJumpingAlt, isGrounded, groundedPlayer = false;
+    public bool isJumping, isJumpingAlt, isGrounded;
     
     Vector3 movement;
 
     CharacterController Controller;
-    
+
     [SerializeField]
     Vector3 playerVelocity;
 
@@ -35,14 +35,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        isGrounded = !Controller.isGrounded;
+        isGrounded = Controller.isGrounded;
 
-        if (groundedPlayer && playerVelocity.y < 0)
+        if (isGrounded && playerVelocity.y < 0)
         {
-            playerVelocity.y = 0f;
+            playerVelocity.y = 0.0f;
         }
         
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
 
         Controller.Move(move * Time.deltaTime * Speed);
 
@@ -55,12 +55,10 @@ public class PlayerMovement : MonoBehaviour
         {
             print("Botão de pulo apertado");
 
-            print("Vai pular?" + groundedPlayer);
+            print("Vai pular?" + isGrounded);
 
-            if (groundedPlayer == false)
+            if (isGrounded)
             {
-                groundedPlayer = true;
-
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * 3.0f * gravityValue);
             }
         }
