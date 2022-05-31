@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("Botão de pulo apertado");
 
-            print("Vai pular?" + isGrounded);
+            print("Is Grounder?" + isGrounded);
 
             if (isGrounded)
             {
