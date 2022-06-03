@@ -1,0 +1,1 @@
+Open AutoRig (Window -> AutoRig), select a character in your scene, press **View Bones**.
