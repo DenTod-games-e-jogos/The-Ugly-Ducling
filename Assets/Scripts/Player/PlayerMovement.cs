@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
     float vaxis = 5.0f, haxis = 6.0f;
 
-    float jumpHeight = 6.0f;
+    float jumpHeight = 3.0f;
 
     float gravityValue = -1.5f;
     
