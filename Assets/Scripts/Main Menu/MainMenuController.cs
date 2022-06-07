@@ -7,6 +7,6 @@ public class MainMenuController : MonoBehaviour
 {
     public void OnNewGameClick()
     {
-        SceneManager.LoadScene("Game 1");
+        SceneManager.LoadScene("Game1");
     }
 }
