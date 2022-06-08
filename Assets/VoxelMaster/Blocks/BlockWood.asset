@@ -17,9 +17,9 @@ MonoBehaviour:
   transparent: 0
   durability: 3
   blockTexture:
-    front: 6
-    left: 6
-    back: 6
-    right: 6
-    top: 7
-    bottom: 7
+    front: 10
+    left: 10
+    back: 10
+    right: 10
+    top: 11
+    bottom: 11
