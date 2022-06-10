@@ -1,0 +1,10 @@
+# Made in Blockbench 4.2.4
+newmtl m_1
+map_Kd InsideHouse.png 
+newmtl m_2
+map_Kd Walls.png 
+newmtl m_3
+map_Kd WallsInside.png 
+newmtl m_4
+map_Kd WallsInside2.png 
+newmtl none
