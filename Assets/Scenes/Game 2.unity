@@ -131,16 +131,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 70582547910045178, guid: bff94b60a6c5eac4eb40559111e5cb65,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 70582547910045178, guid: bff94b60a6c5eac4eb40559111e5cb65,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3394370397923894830, guid: bff94b60a6c5eac4eb40559111e5cb65,
         type: 3}
       propertyPath: m_RootOrder
@@ -200,16 +190,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mark3_Final
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721765854696585902, guid: bff94b60a6c5eac4eb40559111e5cb65,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721765854696585902, guid: bff94b60a6c5eac4eb40559111e5cb65,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bff94b60a6c5eac4eb40559111e5cb65, type: 3}
