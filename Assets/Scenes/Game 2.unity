@@ -191,6 +191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark3_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 8260312469644642522, guid: bff94b60a6c5eac4eb40559111e5cb65,
+        type: 3}
+      propertyPath: cursorLocked
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bff94b60a6c5eac4eb40559111e5cb65, type: 3}
 --- !u!1 &1957666962
