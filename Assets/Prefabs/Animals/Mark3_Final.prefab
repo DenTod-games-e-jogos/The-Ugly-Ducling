@@ -134,6 +134,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6753639714768236593, guid: 9fac14d9ebe97254baeb9112d905a151,
+        type: 3}
+      propertyPath: cursorLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996307545449950282, guid: 9fac14d9ebe97254baeb9112d905a151,
         type: 3}
       propertyPath: Gravity
