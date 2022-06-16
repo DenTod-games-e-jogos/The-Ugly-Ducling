@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0784a4e1796ad643a169990e8e4ea23, type: 3}
-  m_Name: BlockLeaves
+  m_Name: Dirt
   m_EditorClassIdentifier: 
-  id: 5
-  blockName: Leaves
-  transparent: 1
-  durability: 0.33
+  id: 1
+  blockName: Dirt
+  transparent: 0
+  durability: 1
   blockTexture:
-    front: 5
-    left: 5
-    back: 5
-    right: 5
-    top: 5
-    bottom: 5
+    front: 0
+    left: 0
+    back: 0
+    right: 0
+    top: 0
+    bottom: 0

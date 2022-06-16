@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0784a4e1796ad643a169990e8e4ea23, type: 3}
   m_Name: BlockDirt
   m_EditorClassIdentifier: 
-  id: 2
+  id: 0
   blockName: Dirt
   transparent: 0
   durability: 1
   blockTexture:
-    front: 1
-    left: 1
-    back: 1
-    right: 1
-    top: 1
-    bottom: 1
+    front: 0
+    left: 0
+    back: 0
+    right: 0
+    top: 0
+    bottom: 0

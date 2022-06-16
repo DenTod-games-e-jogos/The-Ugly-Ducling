@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0784a4e1796ad643a169990e8e4ea23, type: 3}
   m_Name: BlockGrass
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   blockName: Grass
   transparent: 0
   durability: 1.1
   blockTexture:
-    front: 2
-    left: 2
-    back: 2
-    right: 2
-    top: 3
+    front: 1
+    left: 1
+    back: 1
+    right: 1
+    top: 2
     bottom: 1

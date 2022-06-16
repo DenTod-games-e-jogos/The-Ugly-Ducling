@@ -9,17 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0784a4e1796ad643a169990e8e4ea23, type: 3}
-  m_Name: BlockLeaves
+  m_Script: {fileID: 11500000, guid: 02ce9273f311c82429822686c69c878d, type: 3}
+  m_Name: Terrain
   m_EditorClassIdentifier: 
-  id: 5
-  blockName: Leaves
-  transparent: 1
-  durability: 0.33
-  blockTexture:
-    front: 5
-    left: 5
-    back: 5
-    right: 5
-    top: 5
-    bottom: 5
+  blocksInfo:
+  - {fileID: 11400000, guid: f633d50e6c8677244a53373ed1aad361, type: 2}
+  - {fileID: 11400000, guid: c2b0403cf406e62458fdeeb90fb10eb5, type: 2}
