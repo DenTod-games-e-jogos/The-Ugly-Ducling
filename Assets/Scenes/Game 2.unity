@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 1123968018}
   - component: {fileID: 1123968017}
   - component: {fileID: 1123968016}
+  - component: {fileID: 1123968020}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -224,8 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688d757611316754bb8933f033808f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 1123968017}
-  meshFilter: {fileID: 1123968018}
 --- !u!23 &1123968017
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -246,7 +245,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd0bd4d195666dc468b17767d38f9553, type: 2}
+  - {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -291,6 +290,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1123968020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123968015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8653825d40725824da8e50af23892eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 0
+  biome: {fileID: 0}
+  player: {fileID: 1135075414}
+  spawnPosition: {x: 0, y: 0, z: 0}
+  material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
+  blocktypes: []
+--- !u!4 &1135075414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4991969626649824796, guid: bff94b60a6c5eac4eb40559111e5cb65,
+    type: 3}
+  m_PrefabInstance: {fileID: 722936779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1957666962
 GameObject:
   m_ObjectHideFlags: 0
