@@ -5,6 +5,7 @@
         "apertado",
         "Attemped",
         "Behaviour",
+        "blocktypes",
         "Botão",
         "haxis",
         "icount",
@@ -24,7 +25,8 @@
         "vaxis",
         "vcount",
         "verts",
-        "Voxel"
+        "Voxel",
+        "Voxels"
     ],
     "C_Cpp.default.configurationProvider": "go2sh.cmake-integration"
 }
