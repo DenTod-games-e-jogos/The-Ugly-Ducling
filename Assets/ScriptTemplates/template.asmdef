@@ -1,0 +1,12 @@
+{
+	"name": "template",
+	"references": [],
+	"includePlatforms": [],
+	"excludePlatforms": [],
+	"allowUnsafeCode": true,
+	"overrideReferences": false,
+	"precompiledReferences": [],
+	"autoReferenced": false,
+	"defineConstraints": [],
+	"versionDefines": []
+}
