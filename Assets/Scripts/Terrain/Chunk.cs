@@ -20,13 +20,13 @@ public class Chunk : MonoBehaviour
         { 
 			for (int i = 0; i < 6; i++) 
             {
-				int triangleIndex = VoxelData.voxelTris [p, i];
+				int triangleIndex = VoxelData.Tris [p, i];
 
-				vertices.Add (VoxelData.voxelVerts [triangleIndex]);
+				vertices.Add (VoxelData.Vertex [triangleIndex]);
 				
                 triangles.Add (vertexIndex);
 
-				uvs.Add (VoxelData.voxelUvs [i]);
+				uvs.Add (VoxelData.Uvs [i]);
 
 				vertexIndex++;
 			}
