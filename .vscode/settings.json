@@ -12,6 +12,7 @@
         "Lerp",
         "Mathf",
         "Neighbour",
+        "Perlin",
         "posx",
         "posz",
         "pular",
