@@ -5,23 +5,23 @@ public class PlayerMovement : MonoBehaviour
 {
     float Speed = 3.0f;
 
-    float RotateSpeed = 3.0f;
+    //float RotateSpeed = 3.0f;
 
-    float moveSpeed = 5.0f;
+    //float moveSpeed = 5.0f;
 
-    float rotationSpeed = 4;
+    //float rotationSpeed = 4;
     
-    float runningSpeed = 10.0f;
+    //float runningSpeed = 10.0f;
     
-    float vaxis = 5.0f, haxis = 6.0f;
+    //float vaxis = 5.0f, haxis = 6.0f;
 
     float jumpHeight = 3.0f;
 
     float gravityValue = -1.5f;
     
-    public bool isJumping = false;
+    //public bool isJumping = false;
 
-    public bool isJumpingAlt = false;
+    //public bool isJumpingAlt = false;
 
     public bool isGrounded = false;
     
