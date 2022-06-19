@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8936774100743409338}
   - component: {fileID: 6037494656953621028}
-  - component: {fileID: 523883743087077386}
-  - component: {fileID: 3796937044480490173}
   m_Layer: 0
   m_Name: Generator
   m_TagString: VoxelTerrain
@@ -43,45 +41,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8936774100743409332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e2df017c1be9f74892383bbf5e21718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChunkSize: 16
-  renderDistance: 128
-  disposeDistance: 256
-  ignoreYAxis: 0
-  staticBatchingInterval: 1
-  enableColliders: 1
-  blockDictionary: {fileID: 11400000, guid: 2c6e4023ad9580046b66f79145208e34, type: 2}
-  material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
-  tiling: 16
-  UVPadding: 0
---- !u!114 &523883743087077386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936774100743409332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5046214dc1f574184dbf667ca67b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  generationDistance: 128
-  updateDistance: 16
-  chunksPerFrame: 4
-  destroyUnusedChunks: 1
---- !u!114 &3796937044480490173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936774100743409332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3177f76d9d7564459984c7d4bbe2e26, type: 3}
+  m_Script: {fileID: 11500000, guid: 688d757611316754bb8933f033808f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
