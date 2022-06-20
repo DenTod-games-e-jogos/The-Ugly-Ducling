@@ -1,4 +1,5 @@
-﻿﻿using System.Collections;
+﻿﻿using System.Diagnostics;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -94,7 +95,7 @@ public class Chunk
 
     public void TickUpdate() 
     {
-        print(chunkObject.name + " currently has " + activeVoxels.Count + " active blocks.");
+        Debug.Log(chunkObject.name + " currently has " + activeVoxels.Count + " active blocks.");
 
         for (int i = activeVoxels.Count - 1; i > -1; i--) 
         {
