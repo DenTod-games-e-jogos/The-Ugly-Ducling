@@ -23,6 +23,12 @@ public class Chunk : MonoBehaviour
 
     World world;
 
+	int x;
+
+	int y;
+	
+	int z;
+
     public Chunk (ChunkCoord coord, World world) 
 	{
         coord = coord;
@@ -82,7 +88,6 @@ public class Chunk : MonoBehaviour
 				}
 			}
 		}
-
 	}
 
     public bool isActive 
