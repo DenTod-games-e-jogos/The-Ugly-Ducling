@@ -53,9 +53,6 @@ public class Chunk : MonoBehaviour
 
 	void PopulateVoxelMap () 
 	{	
-		// esse código serve pra popular o mapa com os blocos, manter desativado
-		// por enquanto, para testar
-		/*
 		for (int y = 0; y < VoxelData.ChunkHeight; y++) 
 		{
 			for (int x = 0; x < VoxelData.ChunkWidth; x++) 
@@ -66,17 +63,8 @@ public class Chunk : MonoBehaviour
 				}
 			}
 		}
-		*/
 		
-		//esse cria apenas 1 chunk, do tipo vermelho
-		voxelMap[x,y,z] = 1;
-
-		//o valor 0 do array, por algum motivo, ta bugado no editor
-		//então coloquei ele como Default_BUGADO
-		// os tipos de blocos começam a partir do 1, exemplo:
-		// bloco vermelho = 1
-		// bloco roxo = 2
-		// etc
+		voxelMap[x, y, z] = 1;
 	}
 
 	void CreateMeshData () 
