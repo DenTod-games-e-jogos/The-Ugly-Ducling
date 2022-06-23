@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.replicastudios.link": {
+      "version": "file:C:/Users/rodri/Documents/replica-unity-link-v0.0.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {}
+    },
     "com.unity.addressables": {
       "version": "1.19.17",
       "depth": 1,
