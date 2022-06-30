@@ -133,6 +133,36 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
         type: 3}
+      propertyPath: top
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
+      propertyPath: back
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
+      propertyPath: front
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
+      propertyPath: ground
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916305134048038480, guid: 66ed6583eb8556644a43847ac0498197,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1829242981}
