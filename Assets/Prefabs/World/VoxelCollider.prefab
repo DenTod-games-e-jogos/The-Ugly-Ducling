@@ -540,13 +540,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1946649a6fa8abd44b9d9a50bb0ac924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  voxelWorldManager: {fileID: 0}
   player: {fileID: 0}
-  top: {fileID: 2916305133660623028}
-  ground: {fileID: 2916305134132569285}
-  left: {fileID: 2916305132491243853}
-  right: {fileID: 2916305133974454704}
-  front: {fileID: 2916305133045247120}
-  back: {fileID: 2916305133790780687}
+  top: {fileID: 0}
+  ground: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  front: {fileID: 0}
+  back: {fileID: 0}
   canGoFront: 0
   canGoBack: 0
   canGoLeft: 0
