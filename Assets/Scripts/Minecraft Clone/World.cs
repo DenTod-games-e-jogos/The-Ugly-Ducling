@@ -54,7 +54,7 @@ public class World : MonoBehaviour
 
     public GameObject debugScreen;
 
-    public GameObject creativeInventoryWindow;
+    //public GameObject creativeInventoryWindow;
 
     public GameObject cursorSlot;
 
@@ -339,7 +339,7 @@ public class World : MonoBehaviour
 
                 Cursor.visible = true;
                 
-                creativeInventoryWindow.SetActive(true);
+                //creativeInventoryWindow.SetActive(true);
                 
                 cursorSlot.SetActive(true);
             } 
@@ -350,7 +350,7 @@ public class World : MonoBehaviour
 
                 Cursor.visible = false;
                 
-                creativeInventoryWindow.SetActive(false);
+                //creativeInventoryWindow.SetActive(false);
                 
                 cursorSlot.SetActive(false);
             }

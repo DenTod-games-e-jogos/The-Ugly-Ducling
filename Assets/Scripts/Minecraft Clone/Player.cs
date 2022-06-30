@@ -1,10 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
+    [SerializeField] GameObject voxelWorldManager; 
     public bool isGrounded;
     public bool isSprinting;
 
@@ -39,24 +40,26 @@ public class Player : MonoBehaviour {
     private void Start() {
 
         cam = GameObject.Find("Main Camera").transform;
-        world = GameObject.Find("World").GetComponent<World>();
+        world = voxelWorldManager.GetComponent<World>();
 
         world.inUI = false;
 
     }
 
     private void FixedUpdate() {
-        
-        if (!world.inUI) {
+        world = voxelWorldManager.GetComponent<World>();
+        if (world != null){
+            if (!world.inUI) {
 
-            CalculateVelocity();
-            if (jumpRequest)
-                Jump();
+                CalculateVelocity();
+                if (jumpRequest)
+                    Jump();
 
-            transform.Rotate(Vector3.up * mouseHorizontal * world.settings.mouseSensitivity);
-            cam.Rotate(Vector3.right * -mouseVertical * world.settings.mouseSensitivity);
-            transform.Translate(velocity, Space.World);
+                transform.Rotate(Vector3.up * mouseHorizontal * world.settings.mouseSensitivity);
+                //cam.Rotate(Vector3.right * -mouseVertical * world.settings.mouseSensitivity);
+                transform.Translate(velocity, Space.World);
 
+            }
         }
 
     }
@@ -133,9 +136,9 @@ public class Player : MonoBehaviour {
         mouseHorizontal = Input.GetAxis("Mouse X");
         mouseVertical = Input.GetAxis("Mouse Y");
 
-        if (Input.GetButtonDown("Sprint"))
-            isSprinting = true;
-        if (Input.GetButtonUp("Sprint"))
+        //if (Input.GetButtonDown("Sprint"))
+        //    isSprinting = true;
+        //if (Input.GetButtonUp("Sprint"))
             isSprinting = false;
 
         if (isGrounded && Input.GetButtonDown("Jump"))
