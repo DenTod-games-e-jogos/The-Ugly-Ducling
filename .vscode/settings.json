@@ -12,6 +12,7 @@
         "haxis",
         "icount",
         "Lerp",
+        "Linecast",
         "Mathf",
         "Neighbour",
         "Perlin",
