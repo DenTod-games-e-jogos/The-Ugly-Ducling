@@ -1,51 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1107199311
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1107199313}
-  - component: {fileID: 1107199312}
-  m_Layer: 0
-  m_Name: Ground check
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1107199313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107199311}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8549839314119724799}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1107199312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107199311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084c01ab381b9da4082c1f84cf70751b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxGroundDistance: 0.3
-  isGrounded: 0
 --- !u!1 &2604937345358488536
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +152,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3458683876500371808}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!1 &8207061792905596041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,7 +1732,6 @@ Transform:
   - {fileID: 3662197138209425209}
   - {fileID: 5323352208754554047}
   - {fileID: 729848101888573211}
-  - {fileID: 1107199313}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2000,7 +1953,7 @@ PrefabInstance:
     - target: {fileID: 102401403987559311, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 68
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1043430537253027976, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -2095,7 +2048,7 @@ PrefabInstance:
     - target: {fileID: 2646726693909178681, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 687
+      value: 699
       objectReference: {fileID: 0}
     - target: {fileID: 3574258532294144118, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -2105,7 +2058,7 @@ PrefabInstance:
     - target: {fileID: 3574258532294144118, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 65
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 5897981379754947635, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
