@@ -74,10 +74,10 @@ namespace VoxelMaster
                 previewRender.BeginPreview(r, background);
                 previewRender.DrawMesh(cubeMesh, new Vector3(-0.5f, -0.5f, -0.5f), Quaternion.identity, previewMaterial, 0);
 
-                previewRender.m_Camera.transform.position = Vector2.zero;
-                previewRender.m_Camera.transform.rotation = Quaternion.Euler(new Vector3(-drag.y, -drag.x, 0));
-                previewRender.m_Camera.transform.position = previewRender.m_Camera.transform.forward * -6f;
-                previewRender.m_Camera.Render();
+                previewRender.camera.transform.position = Vector2.zero;
+                previewRender.camera.transform.rotation = Quaternion.Euler(new Vector3(-drag.y, -drag.x, 0));
+                previewRender.camera.transform.position = previewRender.camera.transform.forward * -6f;
+                previewRender.camera.Render();
 
                 Texture resultRender = previewRender.EndPreview();
                 GUI.DrawTexture(r, resultRender, ScaleMode.StretchToFill, true);
@@ -91,10 +91,10 @@ namespace VoxelMaster
             previewRender.BeginPreview(new Rect(0, 0, width / 2, height / 2), GUIStyle.none);
             previewRender.DrawMesh(cubeMesh, new Vector3(-0.5f, -0.5f, -0.5f), Quaternion.identity, previewMaterial, 0);
 
-            previewRender.m_Camera.transform.position = Vector2.zero;
-            previewRender.m_Camera.transform.rotation = Quaternion.Euler(new Vector3(-drag.y, -drag.x, 0));
-            previewRender.m_Camera.transform.position = previewRender.m_Camera.transform.forward * -6f;
-            previewRender.m_Camera.Render();
+            previewRender.camera.transform.position = Vector2.zero;
+            previewRender.camera.transform.rotation = Quaternion.Euler(new Vector3(-drag.y, -drag.x, 0));
+            previewRender.camera.transform.position = previewRender.camera.transform.forward * -6f;
+            previewRender.camera.Render();
 
             Texture resultRender = previewRender.EndPreview();
             Texture2D thumbnail = new Texture2D(width, height);
