@@ -62,7 +62,7 @@ MonoBehaviour:
   player: {fileID: 0}
   _player: {fileID: 0}
   spawnPosition: {x: 0, y: 5, z: 0}
-  material: {fileID: 2100000, guid: 82082689290290d429ef5be65ab79789, type: 2}
+  material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
   transparentMaterial: {fileID: 2100000, guid: 9bd70c006693ec445ad257fbd43bb4f0, type: 2}
   waterMaterial: {fileID: 2100000, guid: 285c2fe7c2cf9454f8328e7452875936, type: 2}
   blocktypes:
