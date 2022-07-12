@@ -297,12 +297,17 @@ ModelImporter:
   - first:
       137: 13700000
     second: Cat_Lite
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_004__Tex_Cat_B_png
+    second: {fileID: 2100000, guid: bd4f8eca61bf73644bc341423c5fe38d, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
