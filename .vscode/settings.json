@@ -28,6 +28,7 @@
         "Rigidbody",
         "Scriptable",
         "Sensivity",
+        "shadercompiler",
         "tris",
         "vaxis",
         "vcount",
