@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 25
+  controlID: 132
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 133
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 75
+  controlID: 134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,23 +378,23 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 904.4
-      height: 385.2
-    m_Scale: {x: 0.44583336, y: 0.44583336}
-    m_Translation: {x: 452.2, y: 192.6}
+      height: 406.2
+    m_Scale: {x: 0.4701389, y: 0.4701389}
+    m_Translation: {x: 452.2, y: 203.1}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1014.28033
+      x: -961.84344
       y: -432
-      width: 2028.5607
+      width: 1923.6869
       height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.44583336
+  m_defaultScale: 0.4701389
   m_LastWindowPixelSize: {x: 1130.5, y: 507.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -736,11 +736,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.018031063, y: -0.007866651, z: -0.0011208454, w: 1.0003978}
     speed: 2
-    m_Value: {x: 0.019520085, y: -0.007863672, z: -0.0011083602, w: 0.9997779}
+    m_Value: {x: -0.01803106, y: 0.007866651, z: 0.0011208454, w: -1.0003978}
   m_Size:
     m_Target: 10.389508
     speed: 2
-    m_Value: 10.879066
+    m_Value: 10.389508
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -953,9 +953,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 1.4000244}
-    m_SelectedIDs: 7e800000
-    m_LastClickedID: 32894
-    m_ExpandedIDs: 000000007e80000080800000828000008480000086800000888000008a8000008c8000008e80000090800000928000009480000000ca9a3b
+    m_SelectedIDs: 9c800000
+    m_LastClickedID: 32924
+    m_ExpandedIDs: 000000009c8000009e800000a0800000a2800000a4800000a6800000a8800000aa800000ac800000ae800000b0800000b280000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -983,7 +983,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e80000080800000828000008480000086800000888000008a8000008c8000008e800000908000009280000094800000
+    m_ExpandedIDs: 000000009c8000009e800000a0800000a2800000a4800000a6800000a8800000aa800000ac800000ae800000b0800000b2800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
