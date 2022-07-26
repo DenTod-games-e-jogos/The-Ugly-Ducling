@@ -1772,7 +1772,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.5, z: 0.15}
+  m_Center: {x: 0, y: 1.7, z: 0.15}
 --- !u!114 &5495085878778695281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,7 +1953,7 @@ PrefabInstance:
     - target: {fileID: 102401403987559311, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 140
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: 1043430537253027976, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -2048,7 +2048,7 @@ PrefabInstance:
     - target: {fileID: 2646726693909178681, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 756
+      value: 759
       objectReference: {fileID: 0}
     - target: {fileID: 2646726693909178681, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -9603,7 +9603,7 @@ PrefabInstance:
     - target: {fileID: 3574258532294144118, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 137
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 5564618930611216640, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
