@@ -53,7 +53,7 @@ MonoBehaviour:
   staticBatchingInterval: 1
   enableColliders: 1
   blockDictionary: {fileID: 11400000, guid: 2c6e4023ad9580046b66f79145208e34, type: 2}
-  material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
+  material: {fileID: 2100000, guid: c9345f76be5146645af2fde03c9e65a5, type: 2}
   tiling: 4
   UVPadding: 0
 --- !u!114 &8526404682974666735
