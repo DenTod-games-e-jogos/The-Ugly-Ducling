@@ -6684,16 +6684,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Statue
       objectReference: {fileID: 0}
-    - target: {fileID: 297613198307523227, guid: c53da8da4955fb146a404883c12823ed,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 297613198307523227, guid: c53da8da4955fb146a404883c12823ed,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 2484191399002643876, guid: c53da8da4955fb146a404883c12823ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -6754,21 +6744,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 288105633}
-    - target: {fileID: 3833811188962560713, guid: c53da8da4955fb146a404883c12823ed,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 710e4701d43ec4c42bd8e611842b1b1a, type: 2}
     - target: {fileID: 4743572338439395673, guid: c53da8da4955fb146a404883c12823ed,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 288105633}
-    - target: {fileID: 4743572338439395673, guid: c53da8da4955fb146a404883c12823ed,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7863505012160472504, guid: c53da8da4955fb146a404883c12823ed,
         type: 3}
       propertyPath: m_Mesh
@@ -6777,7 +6757,7 @@ PrefabInstance:
     - target: {fileID: 7863505012160472504, guid: c53da8da4955fb146a404883c12823ed,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 3824
+      value: 3836
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53da8da4955fb146a404883c12823ed, type: 3}
