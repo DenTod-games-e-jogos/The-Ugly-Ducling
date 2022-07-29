@@ -1838,7 +1838,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3983250521868771734}
   - component: {fileID: 7386392951868620154}
-  - component: {fileID: 1092054221573514323}
   m_Layer: 0
   m_Name: PlayerCameraRoot
   m_TagString: CinemachineTarget
@@ -1900,44 +1899,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2863485259148260619}
---- !u!114 &1092054221573514323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8960860347200395069}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 3983250521868771734}
-  m_Lens:
-    FieldOfView: 40
-    OrthographicSize: 10
-    NearClipPlane: 0.2
-    FarClipPlane: 500
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1.7772021, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 2863485259148260619}
 --- !u!1001 &314111165335388051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1953,7 +1914,7 @@ PrefabInstance:
     - target: {fileID: 102401403987559311, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 161
+      value: 167
       objectReference: {fileID: 0}
     - target: {fileID: 1043430537253027976, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -2048,7 +2009,7 @@ PrefabInstance:
     - target: {fileID: 2646726693909178681, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 777
+      value: 783
       objectReference: {fileID: 0}
     - target: {fileID: 2646726693909178681, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
@@ -9603,7 +9564,7 @@ PrefabInstance:
     - target: {fileID: 3574258532294144118, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 158
+      value: 164
       objectReference: {fileID: 0}
     - target: {fileID: 5564618930611216640, guid: d8e9eee92e7c7c14d825cdbf7c52b8e2,
         type: 3}
