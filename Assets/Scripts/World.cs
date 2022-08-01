@@ -348,10 +348,8 @@ public class World : MonoBehaviour
             }
         }
 
-        /* TREE PASS */
-
-        if (yPos == terrainHeight) {
-
+        if (yPos == terrainHeight) 
+        {
             if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.treeZoneScale) > biome.treeZoneThreshold) 
             {
                 if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.treePlacementScale) > 
@@ -454,7 +452,7 @@ public class BlockType
 
             default:
             {
-                print("Error in GetTextureID; invalid face index");
+                MonoBehaviour.print("Error in GetTextureID; invalid face index");
 
                 return 0;
             }
