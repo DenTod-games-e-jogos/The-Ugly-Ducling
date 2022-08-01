@@ -78,7 +78,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 32
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
