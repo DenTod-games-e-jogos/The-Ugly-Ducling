@@ -17,7 +17,7 @@ Shader "TSF/Base1"
 		LOD 250
     	ZWrite On
 	   	Cull Back
-		Lighting Off
+		Lighting on
 		Fog { Mode Off }
 		
         Pass 

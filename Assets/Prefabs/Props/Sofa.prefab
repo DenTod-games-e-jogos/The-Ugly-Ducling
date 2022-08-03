@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 41
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &8238776423035019983
 Transform:
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1630
+  m_VersionIndex: 1636
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
