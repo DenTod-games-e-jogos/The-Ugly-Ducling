@@ -25,7 +25,7 @@ Shader "TSF/BaseOutline1"
         Fog { Mode Off }
         
         UsePass "TSF/Base1/BASE"
-        	
+        
         Pass
         {
             Cull Front
@@ -35,7 +35,7 @@ Shader "TSF/BaseOutline1"
 			#pragma fragmentoption ARB_precision_hint_fastest
 			#pragma glsl_no_auto_normalization
             #pragma vertex vert
- 			#pragma fragment frag
+			#pragma fragment frag
 			
             struct appdata_t 
             {
@@ -54,17 +54,17 @@ Shader "TSF/BaseOutline1"
             v2f vert (appdata_t v) 
             {
                 v2f o;
-			    o.pos = v.vertex;
+				o.pos = v.vertex;
 			    o.pos.xyz += normalize(v.normal.xyz) *_Outline*0.01;
-			    o.pos = UnityObjectToClipPos(o.pos);
-			    return o;
+				o.pos = UnityObjectToClipPos(o.pos);
+				return o;
             }
             
             fixed4 _OutlineColor;
             
             fixed4 frag(v2f i) :COLOR 
 			{
-		    	return _OutlineColor;
+				return _OutlineColor;
 			}
             
             ENDCG

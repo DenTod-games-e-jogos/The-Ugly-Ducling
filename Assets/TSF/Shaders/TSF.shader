@@ -45,15 +45,15 @@ Shader "TSF/Base1"
 					float4 texcoord : TEXCOORD0;
 				};
 				
-                 struct v2f 
-                 {
+                struct v2f 
+                {
                     float4 pos : SV_POSITION;
                     #if _TEX_ON
                     half2 uv : TEXCOORD0;
                     #endif
                     half2 uvn : TEXCOORD1;
-                 };
-               
+                };
+            
                 v2f vert (appdata_base0 v)
                 {
                     v2f o;
@@ -63,14 +63,14 @@ Shader "TSF/Base1"
                     float2 uvM = mul((float3x3)UNITY_MATRIX_V, n).xy;
                     uvM = ( uvM * float2(0.5, 0.5) ) + float2(0.5, 0.5);
                     o.uvn = uvM;
-                     #if _TEX_ON
+                    #if _TEX_ON
                     o.uv = TRANSFORM_TEX ( v.texcoord, _MainTex );
                     #endif
                     return o;
                 }
 
-              	sampler2D _ToonShade;
-                fixed _Brightness;
+            sampler2D _ToonShade;
+            fixed _Brightness;
                 
                 #if _COLOR_ON
                 fixed4 _Color;
