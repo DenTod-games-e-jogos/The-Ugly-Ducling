@@ -107,8 +107,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6292903641269913585}
-  - component: {fileID: 2675136743618221492}
-  - component: {fileID: 7887531089923751353}
+  - component: {fileID: 198676483610259762}
+  - component: {fileID: 7993159224923412840}
   m_Layer: 0
   m_Name: VoiceOfMark
   m_TagString: Untagged
@@ -132,7 +132,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2675136743618221492
+--- !u!82 &198676483610259762
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,10 +152,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 10
-  MaxDistance: 5000
+  MinDistance: 100
+  MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -228,7 +228,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7887531089923751353
+--- !u!114 &7993159224923412840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,4 +240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f21763b3d58dc4ea1c5e4147314bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VoiceMark: {fileID: 2675136743618221492}
+  VoiceMark: {fileID: 198676483610259762}
