@@ -19,16 +19,16 @@
 
         [Header(Light)][Space(5)]  //light
         [Toggle] _Clipped ("Clipped", Float) = 0
-        _MinLight ("Min Light", Range(0,1)) = 0
-        _MaxLight ("Max Light", Range(0,1)) = 1
-        _Lumin ("Luminocity", Range(0,2)) = 0
+        _MinLight ("Min Light", Range(0,90)) = 0
+        _MaxLight ("Max Light", Range(0,300)) = 300
+        _Lumin ("Luminocity", Range(0,200)) = 0
 
         [Header(Shine)][Space(5)]  //shine
 		[HDR] _ShnColor ("Color", COLOR) = (1,1,0,1)
         [Toggle] _ShnOverlap ("Overlap", Float) = 0
 
         _ShnIntense ("Intensity", Range(0,1)) = 0
-        _ShnRange ("Range", Range(0,1)) = 0.15
+        _ShnRange ("Range", Range(0,1)) = 0.1
         _ShnSmooth ("Smoothness", Range(0,1)) = 0
     }
 
