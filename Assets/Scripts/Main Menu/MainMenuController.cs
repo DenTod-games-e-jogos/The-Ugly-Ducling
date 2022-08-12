@@ -7,6 +7,15 @@ public class MainMenuController : MonoBehaviour
 {
     public void OnNewGameClick()
     {
+        SceneManager.LoadScene("Intro");
+
+        StartCoroutine(StartGame());
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(3.5f);
+
         SceneManager.LoadScene("Game 1");
     }
 }
