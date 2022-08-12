@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
 
     IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
 
         SceneManager.LoadScene("Game 1");
     }
