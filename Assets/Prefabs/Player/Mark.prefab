@@ -1925,7 +1925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ec74f53b47e1b44820217c6b1919ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LuzPlayer: {fileID: 0}
+  LuzPlayer: {fileID: 6209340045179943081}
 --- !u!54 &2505714714924596265
 Rigidbody:
   m_ObjectHideFlags: 0
