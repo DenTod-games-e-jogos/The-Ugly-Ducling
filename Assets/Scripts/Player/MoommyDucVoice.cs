@@ -6,7 +6,7 @@ public class MoommyDucVoice : MonoBehaviour
 
     public AudioSource VoiceMoommyDuc;
     
-    void FixedUpdate()
+    void Update()
     {
         if(Input.GetKey(e))
         {
