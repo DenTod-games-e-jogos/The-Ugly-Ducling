@@ -6,6 +6,9 @@ public class MarkInventory : MonoBehaviour
 {
 	public Image KeyInventory;
 
+	[SerializeField]
+	GameObject Key;
+
 	KeyCode e = KeyCode.E;
 
 	void Update()
@@ -24,6 +27,8 @@ public class MarkInventory : MonoBehaviour
 	IEnumerator ShowKey()
 	{
 		yield return new WaitForSeconds(5.0f);
+
+		Key.SetActive(false);
 
 		KeyInventory.enabled = true;
 
