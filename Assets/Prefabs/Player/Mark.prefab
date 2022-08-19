@@ -1822,6 +1822,8 @@ GameObject:
   - component: {fileID: 9209586856155583929}
   - component: {fileID: 6853205199319101794}
   - component: {fileID: 2505714714924596265}
+  - component: {fileID: 1667073607}
+  - component: {fileID: 1667073615}
   m_Layer: 0
   m_Name: Mark
   m_TagString: Player
@@ -1942,6 +1944,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1667073607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549839314119365343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290b7296c389e2b4cbb5f17d22fca619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowMissionInsideHouse: {fileID: 0}
+--- !u!114 &1667073615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549839314119365343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e801a1b904d530a408a1b4d561433864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyInventory: {fileID: 0}
 --- !u!1 &8960860347200395069
 GameObject:
   m_ObjectHideFlags: 0
