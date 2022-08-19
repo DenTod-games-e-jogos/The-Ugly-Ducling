@@ -2026,6 +2026,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &653205444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3268225227091640750, guid: efb88f2bb13fc2f4b9e4821395a35f29,
+    type: 3}
+  m_PrefabInstance: {fileID: 8154349639464046505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &676306520
 Mesh:
   m_ObjectHideFlags: 0
@@ -9929,6 +9935,10 @@ PrefabInstance:
       propertyPath: ShowMissionInsideHouse
       value: 
       objectReference: {fileID: 1251729337}
+    - target: {fileID: 1667073615, guid: 37eb4863b877f4a45af870a7f34e5435, type: 3}
+      propertyPath: Key
+      value: 
+      objectReference: {fileID: 653205444}
     - target: {fileID: 1667073615, guid: 37eb4863b877f4a45af870a7f34e5435, type: 3}
       propertyPath: KeyInventory
       value: 

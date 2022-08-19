@@ -1970,6 +1970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyInventory: {fileID: 0}
+  Key: {fileID: 0}
 --- !u!1 &8960860347200395069
 GameObject:
   m_ObjectHideFlags: 0
