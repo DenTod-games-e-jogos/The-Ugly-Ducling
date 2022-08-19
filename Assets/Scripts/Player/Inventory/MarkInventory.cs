@@ -26,7 +26,7 @@ public class MarkInventory : MonoBehaviour
 
 	IEnumerator ShowKey()
 	{
-		yield return new WaitForSeconds(15.0f);
+		yield return new WaitForSeconds(10.0f);
 
 		Key.SetActive(false);
 
