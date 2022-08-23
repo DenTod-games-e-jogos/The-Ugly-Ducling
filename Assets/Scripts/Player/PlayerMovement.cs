@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     float jumpHeight = 3.0f;
 
-    float gravityValue = -1.5f;
+    [SerializeField] float gravityValue = -1.5f;
     
     //public bool isJumping = false;
 
