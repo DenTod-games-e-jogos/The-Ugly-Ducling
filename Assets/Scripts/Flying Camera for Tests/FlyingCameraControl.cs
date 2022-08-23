@@ -46,8 +46,9 @@ public class FlyingCameraControl : MonoBehaviour
         //transform.eulerAngles = currentLookingDirection;
         //transform.LookAt(currentLookingDirection);
 
-        //transform.Rotate(Vector3.up * lookingDirection.y * Time.deltaTime * rotationSpeed);
-        transform.Rotate(Vector3.right * lookingDirection.x * Time.deltaTime * rotationSpeed, Space.World);
+        //transform.Rotate(Vector3.up * Mathf.Clamp(lookingDirection.y * Time.deltaTime * rotationSpeed, -90, 90));
+        transform.Rotate(Vector3.right * Mathf.Clamp(lookingDirection.x * Time.deltaTime * rotationSpeed, -90, 90), Space.World);
+        //transform.eulerAngles(new Vector3(Mathf.Clamp(lookingDirection.x * Time.deltaTime * rotationSpeed, -90, 90),Mathf.Clamp(lookingDirection.y * Time.deltaTime * rotationSpeed, -90, 90),0));
 
         transform.Translate(movingDirection*travelSpeed);
     }
