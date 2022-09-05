@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeIntroScene : MonoBehaviour 
 {
+	void Awake()
+	{
+		Cursor.visible = false;
+	}
+
 	void Start () 
 	{
 		StartCoroutine(StartGame());
