@@ -27,8 +27,8 @@
 		[HDR] _ShnColor ("Color", COLOR) = (1,1,0,1)
         [Toggle] _ShnOverlap ("Overlap", Float) = 0
 
-        _ShnIntense ("Intensity", Range(0,1)) = 0
-        _ShnRange ("Range", Range(0,1)) = 0.1
+        _ShnIntense ("Intensity", Range(0,600)) = 600
+        _ShnRange ("Range", Range(0,900)) = 900
         _ShnSmooth ("Smoothness", Range(0,1)) = 0
     }
 
