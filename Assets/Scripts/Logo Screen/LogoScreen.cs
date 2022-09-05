@@ -1,10 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LogoScreen : MonoBehaviour
 {
+    void Awake()
+    {
+        Cursor.visible = false;
+    }
+    
     void Start()
     {
         StartCoroutine(Wait());
@@ -12,8 +16,8 @@ public class LogoScreen : MonoBehaviour
 
     IEnumerator Wait()
     {
-        
         yield return new WaitForSeconds(5);
+
         ChangeScene();    
     }
     void ChangeScene()

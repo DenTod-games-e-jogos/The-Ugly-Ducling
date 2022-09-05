@@ -9,6 +9,11 @@ public class MainMenuController : MonoBehaviour
 
     Vector2 HotSpot = Vector2.zero;
 
+    void Awake()
+    {
+        Cursor.visible = true;
+    }
+
     void Start()
     {
         Cursor.SetCursor(CursorTexture, HotSpot, cursorMode);
