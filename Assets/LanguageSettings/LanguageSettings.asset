@@ -43,7 +43,7 @@ MonoBehaviour:
         asm: Unity.Localization}
       data:
         m_LocaleId:
-          m_Code: en
+          m_Code: Italian
     - rid: 2132772600792743963
       type: {class: LocalesProvider, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
     - rid: 2132772600792743964
@@ -212,4 +212,4 @@ MonoBehaviour:
         asm: Unity.Localization}
       data:
         m_LocaleId:
-          m_Code: pt
+          m_Code: en
