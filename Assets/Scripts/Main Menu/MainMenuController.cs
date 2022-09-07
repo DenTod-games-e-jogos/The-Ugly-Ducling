@@ -11,7 +11,10 @@ public class MainMenuController : MonoBehaviour
     Vector2 HotSpot = Vector2.zero;
 
     [SerializeField]
-    Text NuovoGiocco;
+    Text NuovoGioco;
+
+    [SerializeField]
+    Text CaricaGioco;
 
     void Awake()
     {
@@ -30,6 +33,8 @@ public class MainMenuController : MonoBehaviour
 
     public void OnConfigurationClick()
     {
-        NuovoGiocco.text = "Nuovo Giocco";
+        NuovoGioco.text = "Nuovo Gioco";
+
+        CaricaGioco.text = "Carica Gioco";
     }
 }
