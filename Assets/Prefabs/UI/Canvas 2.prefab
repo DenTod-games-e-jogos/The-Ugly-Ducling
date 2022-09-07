@@ -494,6 +494,7 @@ MonoBehaviour:
   CursMode: 0
   NuovoGioco: {fileID: 1631591592685703093}
   CaricaGioco: {fileID: 1631591592071476950}
+  EsciDalGioco: {fileID: 1631591592808098379}
 --- !u!1 &1631591592808098377
 GameObject:
   m_ObjectHideFlags: 0
