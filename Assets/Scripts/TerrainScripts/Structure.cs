@@ -3,18 +3,18 @@ using UnityEngine;
 
 public static class Structure 
 {
-    public static void MakeTree (Vector3 position, Queue<VoxelMod> queue, int minTrunkHeight, int maxTrunkHeight) 
+    public static void MakeTree (Vector3 Position, Queue<VoxelMod> Q, int MinTrunkHeight, int MaxTrunkHeight) 
     {
-        int height = (int)(maxTrunkHeight * Noise.Get2DPerlin(new Vector2(position.x, position.z), 250f, 3f));
+        int Height = (int)(MaxTrunkHeight * Noise.Get2DPerlin(new Vector2(Position.x, Position.z), 250f, 3f));
 
-        if (height < minTrunkHeight)
+        if (Height < MinTrunkHeight)
         {
-            height = minTrunkHeight;
+            Height = MinTrunkHeight;
         }
 
-        for (int i = 1; i < height; i++)
+        for (int i = 1; i < Height; i++)
         {
-            queue.Enqueue(new VoxelMod(new Vector3(position.x, position.y + i, position.z), 6));
+            Q.Enqueue(new VoxelMod(new Vector3(Position.x, Position.y + i, Position.z), 6));
         }
         
         for (int x = -3; x < 4; x++) 
@@ -23,8 +23,35 @@ public static class Structure
             {
                 for (int z = -3; z < 4; z++) 
                 {
-                    queue.Enqueue(new VoxelMod(new Vector3(position.x + x, 
-                    position.y + height + y, position.z + z), 11));
+                    Q.Enqueue(new VoxelMod(new Vector3(Position.x + x, 
+                    Position.y + Height + y, Position.z + z), 11));
+                }
+            }
+        }
+    }
+
+    public static void MakeHouse(Vector3 Position, Queue<VoxelMod> Q, int MinTrunkHeight, int MaxTrunkHeight)
+    {
+        int Height = (int)(MaxTrunkHeight * Noise.Get2DPerlin(new Vector2(Position.x, Position.z), 300f, 5f));
+
+        if (Height < MinTrunkHeight)
+        {
+            Height = MinTrunkHeight;
+        }
+
+        for (int i = 1; i < Height; i++)
+        {
+            Q.Enqueue(new VoxelMod(new Vector3(Position.x, Position.y + i, Position.z), 10));
+        }
+        
+        for (int x = -10; x < 4; x++) 
+        {
+            for (int y = 2; y < 7; y++) 
+            {
+                for (int z = -10; z < 4; z++) 
+                {
+                    Q.Enqueue(new VoxelMod(new Vector3(Position.x + x, 
+                    Position.y + Height + y, Position.z + z), 15));
                 }
             }
         }
