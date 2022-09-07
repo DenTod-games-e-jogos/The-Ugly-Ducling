@@ -19,6 +19,9 @@ public class MainMenuController : MonoBehaviour
     [SerializeField]
     Text EsciDalGioco;
 
+    [SerializeField]
+    Text Opzioni;
+
     void Awake()
     {
         Cursor.visible = true;
@@ -41,6 +44,8 @@ public class MainMenuController : MonoBehaviour
         CaricaGioco.text = "Carica Gioco";
 
         EsciDalGioco.text = "Esci Dal Gioco";
+
+        Opzioni.text = "Opzioni";
     }
 
     public void OnExitClick()
