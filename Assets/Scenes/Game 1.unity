@@ -1695,7 +1695,7 @@ PrefabInstance:
     - target: {fileID: 6895808929936982370, guid: 623ffaa77ab3711408f5f4d1a937611a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 6895808929936982370, guid: 623ffaa77ab3711408f5f4d1a937611a,
         type: 3}
@@ -5148,7 +5148,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-235864
+  m_Name: pb_Mesh-60934
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13383,32 +13383,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37eb4863b877f4a45af870a7f34e5435, type: 3}
---- !u!1 &5009802278079837380 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1561264390466491862, guid: 37eb4863b877f4a45af870a7f34e5435,
-    type: 3}
-  m_PrefabInstance: {fileID: 5009802278079837379}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5009802278079837381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009802278079837380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &5104686019366613051
 PrefabInstance:
   m_ObjectHideFlags: 0
