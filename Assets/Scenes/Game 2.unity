@@ -130,7 +130,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4056
+  m_Name: pb_Mesh-47476
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -596,6 +596,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voxel Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 8526404682974666729, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
+        type: 3}
+      propertyPath: tiling
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526404682974666729, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
     - target: {fileID: 8526404682974666734, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_RootOrder
