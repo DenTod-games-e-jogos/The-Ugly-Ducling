@@ -231,10 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1037f3e94b560048aebe0098d2331e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapLimit: 4000
+  mapLimit: 40
   nBiomes: 4
-  frontier: 150
-  noiseScale: 150
 --- !u!20 &456734813 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8623997869446308934, guid: bcc495e5f55a9b74b85dae491019051b,
