@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8526404682974666734}
   - component: {fileID: 8526404682974666729}
   - component: {fileID: 8526404682974666735}
-  - component: {fileID: 8526404682974666732}
+  - component: {fileID: 448932084}
   m_Layer: 0
   m_Name: Voxel Terrain
   m_TagString: Untagged
@@ -30,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7920842048643304591}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53,9 +52,9 @@ MonoBehaviour:
   ignoreYAxis: 0
   staticBatchingInterval: 1
   enableColliders: 1
-  blockDictionary: {fileID: 11400000, guid: 2c6e4023ad9580046b66f79145208e34, type: 2}
-  material: {fileID: 2100000, guid: c9345f76be5146645af2fde03c9e65a5, type: 2}
-  tiling: 4
+  blockDictionary: {fileID: 11400000, guid: 79bb453979dd77645b094dcf1ae638a6, type: 2}
+  material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
+  tiling: 16
   UVPadding: 0
 --- !u!114 &8526404682974666735
 MonoBehaviour:
@@ -74,7 +73,7 @@ MonoBehaviour:
   updateDistance: 16
   chunksPerFrame: 4
   destroyUnusedChunks: 1
---- !u!114 &8526404682974666732
+--- !u!114 &448932084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,101 +82,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8526404682974666728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3177f76d9d7564459984c7d4bbe2e26, type: 3}
+  m_Script: {fileID: 11500000, guid: c1037f3e94b560048aebe0098d2331e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &7874687133140852519
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8526404682974666734}
-    m_Modifications:
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -150
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 859951636974389522, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_Name
-      value: House
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533521481120118836, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533521481120118836, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_VersionIndex
-      value: 1717
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235065498670374532, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5765929367416923106, guid: 31d1bc0e976021d41b047173a1201156,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31d1bc0e976021d41b047173a1201156, type: 3}
---- !u!4 &7920842048643304591 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 46436609795527592, guid: 31d1bc0e976021d41b047173a1201156,
-    type: 3}
-  m_PrefabInstance: {fileID: 7874687133140852519}
-  m_PrefabAsset: {fileID: 0}
+  mapLimit: 4000
+  nBiomes: 4
+  frontier: 150
+  noiseScale: 150
