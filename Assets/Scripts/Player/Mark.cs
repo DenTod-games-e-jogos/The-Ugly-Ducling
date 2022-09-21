@@ -24,7 +24,7 @@ namespace Player
 
         readonly KeyCode D = KeyCode.D;
 
-        readonly KeyCode R = KeyCode.R;
+        //readonly KeyCode R = KeyCode.R;
 
         readonly KeyCode z = KeyCode.Z;
 
