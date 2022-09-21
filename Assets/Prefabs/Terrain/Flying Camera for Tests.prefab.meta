@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 65d76d37b7fb32143984105628a7c784
+=======
+<<<<<<<< HEAD:Assets/Prefabs/Player/MarkOutside.prefab.meta
+guid: 58b25d03f89fded4dacc7eb450a405f4
+========
+guid: bcc495e5f55a9b74b85dae491019051b
+>>>>>>>> Biomes:Assets/Prefabs/Terrain/Flying Camera for Tests.prefab.meta
+>>>>>>> 4c50782a27c63278d9af65217b0d057c28e5a416
 PrefabImporter:
   externalObjects: {}
   userData: 
