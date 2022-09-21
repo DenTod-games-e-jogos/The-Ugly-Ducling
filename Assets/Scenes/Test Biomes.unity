@@ -141,7 +141,11 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0
+=======
+      value: 1
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
       value: 1
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -248,7 +252,10 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
@@ -295,6 +302,9 @@ Camera:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
+=======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -321,7 +331,11 @@ Mesh:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: pb_Mesh-3814
+=======
+  m_Name: pb_Mesh-262222
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
   m_Name: pb_Mesh-262222
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -507,6 +521,7 @@ Mesh:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &650808081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,6 +592,8 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5bb10eed14eb7d489775a89c496e3fa, type: 3}
 =======
+=======
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
@@ -689,6 +706,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
+=======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -724,7 +744,11 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
+=======
+      value: 2
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
       value: 2
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -818,11 +842,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 8526404682974666734, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
 =======
+=======
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
@@ -866,6 +893,9 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
+=======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
@@ -937,9 +967,12 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
 =======
+=======
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
@@ -1035,6 +1068,9 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
+=======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
 =======
 >>>>>>> 60c007f1c50a552ca20f5ac36629c0761fa05ce7
