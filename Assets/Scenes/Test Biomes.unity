@@ -234,7 +234,10 @@ MonoBehaviour:
   mapLimit: 40
   nBiomes: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4c50782a27c63278d9af65217b0d057c28e5a416
 --- !u!20 &456734813 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8623997869446308934, guid: bcc495e5f55a9b74b85dae491019051b,
