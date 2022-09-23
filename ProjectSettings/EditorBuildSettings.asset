@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 5708f004f93c10e48b56b7dceaeeffbc
-  - enabled: 0
-    path: Assets/Scenes/Test Biomes.unity
-    guid: 77d006344709d7149b7dd0a026332cfd
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 56ac366a1b1a2f7469fcefea02536148,
       type: 2}
