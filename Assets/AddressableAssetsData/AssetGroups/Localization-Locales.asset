@@ -17,18 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 49725ba677836a74e8843602bbf48110
   m_SerializeEntries:
-  - m_GUID: 505a7e237bbef1d49969777afa343348
-    m_Address: English
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
   - m_GUID: d361485c0a83d1f43be781f9ba597c34
     m_Address: English (en)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-  - m_GUID: be5317f257385c24cb0feeccc51b0ba5
-    m_Address: Italian
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
@@ -37,8 +27,13 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
-  - m_GUID: 82d2abbe174a255439cb73787a616514
-    m_Address: Italian (Italian)
+  - m_GUID: f6ea25127f934ed4d9a870936b82e76a
+    m_Address: Spanish (es)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+  - m_GUID: e8cd3deae812a7a41b161a1782d142db
+    m_Address: Portuguese (Brazil) (pt-BR)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

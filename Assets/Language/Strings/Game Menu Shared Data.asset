@@ -10,26 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Languages Shared Data
+  m_Name: Game Menu Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Languages
-  m_TableCollectionNameGuidString: 236ed17b7c8769b4e81b7d5c22b2f2f7
+  m_TableCollectionName: Game Menu
+  m_TableCollectionNameGuidString: c07d7c1775036764795b1621dff253aa
   m_Entries:
-  - m_Id: 6843712819200
-    m_Key: 'Menu Inicial
-
-'
+  - m_Id: 10400178176
+    m_Key: Novo Jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 475330387968
+    m_Key: Load Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140948770529280
+    m_Key: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141003086766080
+    m_Key: Sair do Jogo
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 4439001314298429441
+    rid: 1175476320268451846
   references:
     version: 2
     RefIds:
-    - rid: 4439001314298429441
+    - rid: 1175476320268451846
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1662644435738
+        m_CustomEpoch: 1663939744402

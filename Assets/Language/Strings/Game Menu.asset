@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: Languages
+  m_Name: Game Menu
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: 236ed17b7c8769b4e81b7d5c22b2f2f7, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: c07d7c1775036764795b1621dff253aa, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 0f7c4d99dc6a2fe41b68949d2096468d, type: 2}
-  - {fileID: 11400000, guid: 16e356fea5a04cc4a81a186068abcec5, type: 2}
+  - {fileID: 11400000, guid: cc4f4a5d6c0928f488a7765ed97e24c4, type: 2}
+  - {fileID: 11400000, guid: 22baf96e03b34104bb2c67d6e26a488e, type: 2}
+  - {fileID: 11400000, guid: 29f1be6c9382964439ee9236b2c54d47, type: 2}
+  - {fileID: 11400000, guid: fea150020755447428620e1c028994d5, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:
