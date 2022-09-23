@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.nvidia.reflex": "file:C:/Users/rodri/Documents/NVIDIA 1.6/Reflex_Unity_Plugin/com.nvidia.reflex-1.6.0-alpha.5.tgz",
-    "com.replicastudios.link": "file:C:/Users/rodri/Documents/replica-unity-link-v0.0.1.tgz",
+    "com.nvidia.reflex": "file:./com.nvidia.reflex-1.6.0-alpha.5.tgz",
+    "com.replicastudios.link": "file:./replica-unity-link-v0.0.1.tgz",
     "com.unity.cinemachine": "2.9.1",
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.editorcoroutines": "1.0.0",

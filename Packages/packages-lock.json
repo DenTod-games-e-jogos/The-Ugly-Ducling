@@ -8,13 +8,13 @@
       "url": "https://packages.unity.com"
     },
     "com.nvidia.reflex": {
-      "version": "file:C:/Users/rodri/Documents/NVIDIA 1.6/Reflex_Unity_Plugin/com.nvidia.reflex-1.6.0-alpha.5.tgz",
+      "version": "file:./com.nvidia.reflex-1.6.0-alpha.5.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}
     },
     "com.replicastudios.link": {
-      "version": "file:C:/Users/rodri/Documents/replica-unity-link-v0.0.1.tgz",
+      "version": "file:./replica-unity-link-v0.0.1.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}
