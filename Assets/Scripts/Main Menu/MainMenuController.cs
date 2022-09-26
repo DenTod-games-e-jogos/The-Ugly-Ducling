@@ -22,6 +22,9 @@ public class MainMenuController : MonoBehaviour
     [SerializeField]
     Text Opzioni;
 
+    [SerializeField]
+    Text[] OpzioniDiLingua;
+
     void Awake()
     {
         Cursor.visible = true;
@@ -46,6 +49,30 @@ public class MainMenuController : MonoBehaviour
         EsciDalGioco.text = "Esci Dal Gioco";
 
         Opzioni.text = "Opzioni";
+
+        if(Opzioni.enabled == true)
+        {
+            OpzioniDiLingua[0].enabled = true;
+
+            OpzioniDiLingua[0].text = "Italian";
+
+            if (OpzioniDiLingua[0].text == "Italian")
+            {
+                OpzioniDiLingua[0].text = NuovoGioco.text;
+            }
+        }
+
+        else if(Opzioni.enabled == true)
+        {
+            OpzioniDiLingua[1].enabled = true;
+
+            OpzioniDiLingua[1].text = "English";
+
+            if (OpzioniDiLingua[1].text == "English")
+            {
+                OpzioniDiLingua[1].text = NuovoGioco.text;
+            }
+        }
     }
 
     public void OnExitClick()
