@@ -17,8 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 09d3f289beec6e54d9151a67797d47a1
   m_SerializeEntries:
-  - m_GUID: 16e356fea5a04cc4a81a186068abcec5
-    m_Address: Languages_it
+  - m_GUID: 22baf96e03b34104bb2c67d6e26a488e
+    m_Address: Game Menu_it
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it
+    - Preload
+  - m_GUID: 4abc5d262d0e18a4ba0192bff44afc5b
+    m_Address: In Game Text_it
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-it

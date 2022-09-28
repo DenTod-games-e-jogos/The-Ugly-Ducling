@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: Languages
+  m_Name: In Game Text
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: 236ed17b7c8769b4e81b7d5c22b2f2f7, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: 679c87211f6b93c4e8ea65583afb5177, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 0f7c4d99dc6a2fe41b68949d2096468d, type: 2}
-  - {fileID: 11400000, guid: 16e356fea5a04cc4a81a186068abcec5, type: 2}
+  - {fileID: 11400000, guid: 831ac5ddb0cc2cd4585efc8ab6f5375e, type: 2}
+  - {fileID: 11400000, guid: 4abc5d262d0e18a4ba0192bff44afc5b, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

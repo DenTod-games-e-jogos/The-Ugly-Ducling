@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: LanguageConfiguration Shared Data
+  m_Name: In Game Text Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: LanguageConfiguration
-  m_TableCollectionNameGuidString: 2fea58c60a58b654998414f54da1269a
-  m_Entries: []
+  m_TableCollectionName: In Game Text
+  m_TableCollectionNameGuidString: 679c87211f6b93c4e8ea65583afb5177
+  m_Entries:
+  - m_Id: 29425541120
+    m_Key: "Objetivo\t Cena Game 1"
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 2132772678065455112
+    rid: 1175476432314040320
   references:
     version: 2
     RefIds:
-    - rid: 2132772678065455112
+    - rid: 1175476432314040320
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1642800715555
+        m_CustomEpoch: 1664367099501
