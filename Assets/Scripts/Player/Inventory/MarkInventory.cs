@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MarkInventory : MonoBehaviour 
 {
@@ -24,7 +25,7 @@ public class MarkInventory : MonoBehaviour
 		}
 	}
 
-	IEnumerator ShowKey()
+	public IEnumerator ShowKey()
 	{
 		yield return new WaitForSeconds(10.0f);
 
@@ -41,5 +42,9 @@ public class MarkInventory : MonoBehaviour
 		KeyInventory.enabled = false;
 
 		KeyInventory.gameObject.SetActive(false);
+
+		yield return new WaitForSeconds(7.0f);
+
+		SceneManager.LoadScene("Game 2");
 	}
 }

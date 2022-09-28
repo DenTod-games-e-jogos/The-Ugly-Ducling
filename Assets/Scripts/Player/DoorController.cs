@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour 
 {
-	KeyCode X = KeyCode.X;
+	KeyCode e = KeyCode.E;
+
+	[SerializeField]
+	MarkInventory inv;
 
 	void Update()
 	{
-		if(Input.GetKeyDown(X))
+		if(Input.GetKeyDown(e))
 		{
-			SceneManager.LoadScene("Game 2");
+			inv.ShowKey();
 		}
 	}
 }
