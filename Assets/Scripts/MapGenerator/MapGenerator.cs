@@ -33,17 +33,17 @@ public class MapGenerator : BaseGeneration
     
     short desertoGrass = 0;
     
-    short desertoDirty = 1;
+    //short desertoDirty = 1;
     
     short florestaGrass = 2;
     
-    short florestaDirty = 3;
+    //short florestaDirty = 3;
     
-    short florestaRock = 4;
+    //short florestaRock = 4;
     
     short pantanoGrass = 5;
     
-    short pantanoDirty = 6;
+    //short pantanoDirty = 6;
     
     short planiceGrass = 7;
 

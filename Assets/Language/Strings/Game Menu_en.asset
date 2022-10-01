@@ -34,6 +34,14 @@ MonoBehaviour:
     m_Localized: Exit Game
     m_Metadata:
       m_Items: []
+  - m_Id: 2950951424368640
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2951217632649216
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
