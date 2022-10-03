@@ -52,6 +52,8 @@ public class MainMenuController : MonoBehaviour
 
         if(Opzioni.enabled == true)
         {
+            OpzioniDiLingua[0].gameObject.SetActive(true);
+
             OpzioniDiLingua[0].enabled = true;
 
             OpzioniDiLingua[0].text = "Italian";
@@ -62,8 +64,10 @@ public class MainMenuController : MonoBehaviour
             }
         }
 
-        else if(Opzioni.enabled == true)
+        if(Opzioni.enabled == true)
         {
+            OpzioniDiLingua[1].gameObject.SetActive(true);
+
             OpzioniDiLingua[1].enabled = true;
 
             OpzioniDiLingua[1].text = "English";
