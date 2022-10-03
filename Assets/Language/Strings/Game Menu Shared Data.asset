@@ -31,6 +31,14 @@ MonoBehaviour:
     m_Key: Sair do Jogo
     m_Metadata:
       m_Items: []
+  - m_Id: 2950951424368640
+    m_Key: Retornar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2951217632649216
+    m_Key: Idioma
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
