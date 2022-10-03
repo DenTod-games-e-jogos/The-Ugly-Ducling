@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
     GameObject optionsMenu;
     
     [SerializeField] 
-    Dropdown languageDropdown;
+    public Dropdown languageDropdown;
 
     [SerializeField]
     Text NuovoGioco;
