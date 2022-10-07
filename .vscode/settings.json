@@ -17,6 +17,7 @@
         "cinemachine",
         "collab",
         "Cutscene",
+        "Deadzone",
         "deserto",
         "directonal",
         "Duc",
@@ -26,6 +27,7 @@
         "editorcoroutines",
         "Esci",
         "floresta",
+        "Gamepad",
         "Giocco",
         "Gioco",
         "girar",
@@ -33,6 +35,7 @@
         "icount",
         "imageconversion",
         "imgui",
+        "inputsettings",
         "inputsystem",
         "jsonserialize",
         "Lerp",
@@ -89,7 +92,8 @@
         "verts",
         "visualscripting",
         "Voxel",
-        "Voxels"
+        "Voxels",
+        "WASD"
     ],
     "C_Cpp.default.configurationProvider": "go2sh.cmake-integration"
 }
