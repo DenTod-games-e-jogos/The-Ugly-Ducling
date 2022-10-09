@@ -105,73 +105,68 @@ public class MapGenerator : BaseGeneration
 
         if (radio2 > mapLimit)
         {
-            return endWall;
+            return EndWall(x, y, z, height);
         }
 
         if ((radio2 <= mapLimit) && (radio2 > mapLimit - frontier))
         {
             if (Mathf.PerlinNoise(x / noiseScale, z / noiseScale) >= 0.5f)
             {
-                return planiceGrass;
+                return EndWall(x, y, z, height);
             }
 
             else if (y == 0)
             {
-                return bioma4;
+                return Bioma4(x, y, z, height);
             }
-        }
-
-        if (y > height)
-        {
-            return air;
         }
 
         if ((radio2 <= mapLimit - frontier) && (radio2 > (3 * mapLimit / 4) + frontier))
         {
-            return bioma4;
+            return Bioma4(x, y, z, height);
         }
 
         if ((radio2 <= (3 * mapLimit / 4) + frontier) && (radio2 > (3 * mapLimit / 4) - frontier))
         {
             if (Mathf.PerlinNoise(x / noiseScale, z / noiseScale) >= 0.5f)
             {
-                return bioma4;
+                return Bioma4(x, y, z, height);
             }
 
             else
             {
-                return bioma3;
+                return Bioma3(x, y, z, height);
             }
         }
 
         if ((radio2 <= (3 * mapLimit / 4) - frontier) && (radio2 > (2 * mapLimit / 4) + frontier))
         {
-            return bioma3;
+            return Bioma3(x, y, z, height);
         }
 
         if ((radio2 <= (2 * mapLimit / 4) + frontier) && (radio2 > (2 * mapLimit / 4) - frontier))
         {
             if (Mathf.PerlinNoise(x / noiseScale, z / noiseScale) >= 0.5f)
             {
-                return bioma3;
+                return Bioma3(x, y, z, height);
             }
 
             else
             {
-                return bioma2;
+                return Bioma2(x, y, z, height);
             }
         }
 
         if ((radio2 <= (2 * mapLimit / 4) - frontier) && (radio2 > (1 * mapLimit / 4) + frontier))
         {
-            return bioma2;
+            return Bioma2(x, y, z, height);
         }
 
         if ((radio2 <= (1 * mapLimit / 4) + frontier) && (radio2 > (1 * mapLimit / 4) - frontier))
         {
             if (Mathf.PerlinNoise(x / noiseScale, z / noiseScale) >= 0.5f)
             {
-                return bioma2;
+                return Bioma2(x, y, z, height);
             }
 
             else
@@ -191,23 +186,57 @@ public class MapGenerator : BaseGeneration
     short Bioma1(int x, int y, int z, float height)
     {
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
-
         float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
 
         if (y > height)
-        {        
+        {
             if (treeTrunk >= 0.75f && height > 15 && y <= height + 5)
             {
                 return desertoDirty;
             }
-        
-            else if (treeLeaves * Mathf.Clamp01(1 - Vector2.Distance(new Vector2(y, 0), 
+
+            else if (treeLeaves * Mathf.Clamp01(1 - Vector2.Distance(new Vector2(y, 0),
             new Vector2(height + 7, 0)) / 5f) >= 0.25f && treeTrunk <= 0.925f && height > 15)
             {
                 return florestaDirty;
             }
+            else
+            {
+                return air;
+            }
         }
 
         return bioma1;
+    }
+    short Bioma2(int x, int y, int z, float height)
+    {
+        if (y > height)
+        {
+            return air;
+        }
+
+        return bioma2;
+    }
+    short Bioma3(int x, int y, int z, float height)
+    {
+        if (y > height)
+        {
+            return air;
+        }
+
+        return bioma3;
+    }
+    short Bioma4(int x, int y, int z, float height)
+    {
+        if (y > height)
+        {
+            return air;
+        }
+
+        return bioma4;
+    }
+    short EndWall(int x, int y, int z, float height)
+    {
+        return endWall;
     }
 }
