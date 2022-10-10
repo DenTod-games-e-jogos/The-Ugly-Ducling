@@ -16,6 +16,8 @@ namespace Player
 
         float girar = 17.5f;
 
+        float JumpForce = 10.0f;
+
         readonly KeyCode W = KeyCode.W;
 
         readonly KeyCode S = KeyCode.S;
@@ -93,6 +95,9 @@ namespace Player
                 if (Input.GetKeyDown(Sp))
                 {
                     SetAutoJump(AutoJump);
+
+                    Vector3 position = transform.TransformDirection(Vector3.up * 
+                    JumpForce * Time.deltaTime);
                 }
 
                 if (Input.GetKeyDown(z)) 
