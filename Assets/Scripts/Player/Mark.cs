@@ -16,8 +16,6 @@ namespace Player
 
         float girar = 17.5f;
 
-        float JumpForce = 10.0f;
-
         readonly KeyCode W = KeyCode.W;
 
         readonly KeyCode S = KeyCode.S;
@@ -25,8 +23,6 @@ namespace Player
         readonly KeyCode A = KeyCode.A;
 
         readonly KeyCode D = KeyCode.D;
-
-        readonly KeyCode Sp = KeyCode.Space;
 
         readonly KeyCode z = KeyCode.Z;
 
@@ -36,8 +32,6 @@ namespace Player
 
         Animator anim;
 
-        bool AutoJump;
-
         void Awake()
         {
             LuzPlayer = GetComponentInChildren<Light>();
@@ -45,13 +39,6 @@ namespace Player
             mark = GetComponent<CharacterController>();
 
             anim = GetComponent<Animator>();
-        }
-        
-        void SetAutoJump(bool IsAutoJump)
-        {
-            AutoJump = true;
-
-            anim.SetBool("AutoJump", AutoJump);
         }
 
         void Update()
@@ -90,14 +77,6 @@ namespace Player
                 {
                     Vector3 position = transform.TransformDirection (Vector3.back *
                     backMovement * Time.fixedDeltaTime);
-                }
-
-                if (Input.GetKeyDown(Sp))
-                {
-                    SetAutoJump(AutoJump);
-
-                    Vector3 position = transform.TransformDirection(Vector3.up * 
-                    JumpForce * Time.deltaTime);
                 }
 
                 if (Input.GetKeyDown(z)) 

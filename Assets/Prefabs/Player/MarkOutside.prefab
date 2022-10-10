@@ -1511,9 +1511,9 @@ GameObject:
   - component: {fileID: 1768683559239829917}
   - component: {fileID: 5211828211210045805}
   - component: {fileID: 2481191625575802613}
-  - component: {fileID: 1289023102461852989}
   - component: {fileID: 3546575964257802726}
   - component: {fileID: 5542408990980084909}
+  - component: {fileID: 139156587}
   m_Layer: 0
   m_Name: MarkOutside
   m_TagString: Player
@@ -1593,18 +1593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MarkVision: {fileID: 1768683559230809717}
   CameraPlayer: {fileID: 1526443291596995766}
---- !u!114 &1289023102461852989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768683559230454363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30104edb48c46f54081e2bb78c7fd9fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3546575964257802726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,6 +1622,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &139156587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768683559230454363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e15f0746298514ebe2e75d1fa8fe50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityValue: -1.5
+  isGrounded: 0
+  playerVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &1768683559230454365
 GameObject:
   m_ObjectHideFlags: 0
