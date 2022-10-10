@@ -24,7 +24,7 @@ namespace Player
 
         readonly KeyCode D = KeyCode.D;
 
-        //readonly KeyCode R = KeyCode.R;
+        readonly KeyCode Sp = KeyCode.Space;
 
         readonly KeyCode z = KeyCode.Z;
 
@@ -34,6 +34,8 @@ namespace Player
 
         Animator anim;
 
+        bool AutoJump;
+
         void Awake()
         {
             LuzPlayer = GetComponentInChildren<Light>();
@@ -41,7 +43,14 @@ namespace Player
             mark = GetComponent<CharacterController>();
 
             anim = GetComponent<Animator>();
-        }   
+        }
+        
+        void SetAutoJump(bool IsAutoJump)
+        {
+            AutoJump = true;
+
+            anim.SetBool("AutoJump", AutoJump);
+        }
 
         void Update()
         {
@@ -79,6 +88,11 @@ namespace Player
                 {
                     Vector3 position = transform.TransformDirection (Vector3.back *
                     backMovement * Time.fixedDeltaTime);
+                }
+
+                if (Input.GetKeyDown(Sp))
+                {
+                    SetAutoJump(AutoJump);
                 }
 
                 if (Input.GetKeyDown(z)) 
