@@ -21,9 +21,9 @@ public class MarkAnimation : MonoBehaviour
 
     void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("Horizontal");
+        float h = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
 
-        float v = Input.GetAxisRaw("Vertical");
+        float v = Input.GetAxisRaw("Vertical") * Time.deltaTime;
 
         Mover(h, v);
 
@@ -34,7 +34,7 @@ public class MarkAnimation : MonoBehaviour
     {
         mover.Set(h, 0.0f, v);
 
-        mover = mover.normalized * vel * Time.fixedDeltaTime;
+        mover = mover.normalized * vel * Time.deltaTime;
 
         rb.MovePosition(transform.position + mover);
     }
