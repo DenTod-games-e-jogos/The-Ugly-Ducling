@@ -71,9 +71,9 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Lumin: 0
-    - _MaxLight: 1
+    - _MaxLight: 3
     - _Metallic: 0
-    - _MinLight: 0
+    - _MinLight: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
@@ -81,7 +81,7 @@ Material:
     - _Segmented: 1
     - _ShnIntense: 1
     - _ShnOverlap: 0
-    - _ShnRange: 2
+    - _ShnRange: 1
     - _ShnSmooth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -93,5 +93,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShnColor: {r: 0.03773582, g: 0.027654001, b: 0, a: 1}
+    - _ShnColor: {r: 1, g: 0.7, b: 0, a: 1}
   m_BuildTextureStacks: []
