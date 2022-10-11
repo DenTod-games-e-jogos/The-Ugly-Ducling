@@ -4,8 +4,6 @@ public class MarkAnimation : MonoBehaviour
 {
     float vel = 8.5f;
 
-    float JumpForce = 10.0f;
-
     Rigidbody rb;
 
     Animator an;
@@ -30,8 +28,6 @@ public class MarkAnimation : MonoBehaviour
         Mover(h, v);
 
         Animar(h, v);
-
-        SetAutoJump(AutoJump);
     }
 
     void Mover(float h, float v)
@@ -48,14 +44,5 @@ public class MarkAnimation : MonoBehaviour
         bool walking = h != 0.0f || v != 0.0f;
 
         an.SetBool("IsWalking", walking);
-    }
-
-    void SetAutoJump(bool IsAutoJump)
-    {
-        AutoJump = true;
-
-        an.SetBool("AutoJump", AutoJump);
-
-        rb.AddForce(Vector3.up * JumpForce * Time.deltaTime);
     }
 }
