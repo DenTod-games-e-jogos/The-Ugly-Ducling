@@ -54,7 +54,7 @@ MonoBehaviour:
   enableColliders: 1
   blockDictionary: {fileID: 11400000, guid: 79bb453979dd77645b094dcf1ae638a6, type: 2}
   material: {fileID: 2100000, guid: 7015c6f0ed04ecc4a9abf56615f3717b, type: 2}
-  tiling: 16
+  tiling: 96
   UVPadding: 0
 --- !u!114 &8526404682974666735
 MonoBehaviour:
