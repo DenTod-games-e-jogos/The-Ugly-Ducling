@@ -89,3 +89,6 @@ MonoBehaviour:
   nBiomes: 4
   frontier: 150
   noiseScale: 150
+  treeHeight: 10
+  startAreaRadius: 20
+  startPoint: {fileID: 0}

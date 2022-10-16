@@ -9,5 +9,8 @@ namespace VoxelMaster
         {
             return -1;
         }
+        public virtual void Start()
+        {
+        }
     }
 }

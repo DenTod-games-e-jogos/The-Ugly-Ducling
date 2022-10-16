@@ -3,6 +3,7 @@ using VoxelMaster;
 
 public class MapGenerator : BaseGeneration
 {
+    [Header("Map Size and Parameters")]
     [SerializeField] 
     int mapLimit;
     
@@ -15,10 +16,25 @@ public class MapGenerator : BaseGeneration
     [SerializeField] 
     float noiseScale;
 
+    // Florest parameters
+    [Header("Florest Parameters")]
+    [SerializeField] float treeHeight = 10;
+
+    [SerializeField] float startAreaRadius = 20;
+
+    [SerializeField] Transform startPoint = null;
+
     float radio;
 
     float radio2;
-    
+
+    float startArea;
+
+    float startArea2;
+
+
+    // Blocks names
+
     short endWall = 7;
     
     short bioma1 = 2;
@@ -43,7 +59,7 @@ public class MapGenerator : BaseGeneration
     
     short planiceGrass = 7;
 
-    void start()
+    new public void Start()
     {
         endWall = planiceGrass;
 
@@ -95,9 +111,9 @@ public class MapGenerator : BaseGeneration
         height = Mathf.Floor(height);
 
         // Trees!
-        float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
+        //float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
 
-        float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
+        //float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
 
         radio = (x * x) + (z * z);
 
@@ -185,20 +201,38 @@ public class MapGenerator : BaseGeneration
 
     short Bioma1(int x, int y, int z, float height)
     {
+        //float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
         float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
+        float florestArea = Mathf.PerlinNoise(x, z);
 
         if (y > height)
         {
-            if (treeTrunk >= 0.75f && height > 15 && y <= height + 5)
-            {
-                return desertoDirty;
-            }
+            startArea = ((x * x) - startPoint.localPosition.x) + ((z * z) - startPoint.localPosition.z);
+            startArea2 = Mathf.Sqrt(startArea);
 
-            else if (treeLeaves * Mathf.Clamp01(1 - Vector2.Distance(new Vector2(y, 0),
-            new Vector2(height + 7, 0)) / 5f) >= 0.25f && treeTrunk <= 0.925f && height > 15)
+            // Monta a área de início
+            if (startArea2 < startAreaRadius)
             {
-                return florestaDirty;
+                return air;
+            }
+            // Monta a floresta
+            if (florestArea >= 0.25f)
+            {
+                if (treeTrunk >= 0.75f && height > 0 && y <= height + treeHeight)
+                {
+                    return desertoDirty;
+                }
+
+                else if (treeLeaves * Mathf.Clamp01(1 - Vector2.Distance(new Vector2(y, 0),
+                new Vector2(height + treeHeight+2, 0)) / 5f) >= 0.25f && treeTrunk <= 0.925f)
+                {
+                    return florestaDirty;
+                }
+                else
+                {
+                    return air;
+                }
             }
             else
             {
