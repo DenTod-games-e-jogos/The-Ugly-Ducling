@@ -17,11 +17,14 @@ public class MapGenerator : BaseGeneration
     float noiseScale;
 
     [Header("Florest Parameters")]
-    [SerializeField] float treeHeight = 10;
+    [SerializeField] 
+    float treeHeight = 10;
 
-    [SerializeField] float startAreaRadius = 20;
+    [SerializeField] 
+    float startAreaRadius = 20;
 
-    [SerializeField] Transform startPoint = null;
+    [SerializeField] 
+    Transform startPoint = null;
 
     float radio;
 
@@ -66,6 +69,7 @@ public class MapGenerator : BaseGeneration
         bioma3 = desertoGrass;
         
         bioma4 = planiceGrass;
+    }
 
     public override short Generation(int x, int y, int z)
     {
@@ -264,31 +268,31 @@ public class MapGenerator : BaseGeneration
     {
         return endWall;
 
-        if (y != 0)
+        if (y == 0)
         {
+            if (x * x + z * z < (mapLimit / nBiomes) * (mapLimit / nBiomes) + 1)
+            {
+                return 0;
+            }
+
+            if (x * x + z * z < (2 * mapLimit / nBiomes) * (2 * mapLimit / nBiomes) + 1)
+            {
+                return 2;
+            }
+
+            if (x * x + z * z < (3 * mapLimit / nBiomes) * (3 * mapLimit / nBiomes) + 1)
+            {
+                return 5;
+            }
+
+            if (x * x + z * z < (4 * mapLimit / nBiomes) * (4 * mapLimit / nBiomes) + 1)
+            {
+                return 7;
+            }
+
             return -1;
         }
-
-        if (x * x + z * z < (mapLimit / nBiomes) * (mapLimit / nBiomes) + 1)
-        {
-            return 0;
-        }
-
-        if (x * x + z * z < (2 * mapLimit / nBiomes) * (2 * mapLimit / nBiomes) + 1)
-        {
-            return 2;
-        }
-
-        if (x * x + z * z < (3 * mapLimit / nBiomes) * (3 * mapLimit / nBiomes) + 1)
-        {
-            return 5;
-        }
-
-        if (x * x + z * z < (4 * mapLimit / nBiomes) * (4 * mapLimit / nBiomes) + 1)
-        {
-            return 7;
-        }
-
+        
         return -1;
     }
 }
