@@ -3,6 +3,7 @@ using VoxelMaster;
 
 public class MapGenerator : BaseGeneration
 {
+<<<<<<< Updated upstream
     [Header("Map Size and Parameters")]
     [SerializeField] 
     int mapLimit;
@@ -70,10 +71,18 @@ public class MapGenerator : BaseGeneration
         bioma3 = desertoGrass;
         
         bioma4 = planiceGrass;
+=======
+    [SerializeField] int mapLimit;
+    [SerializeField] int nBiomes;
+
+    void start()
+    {
+>>>>>>> Stashed changes
     }
 
     public override short Generation(int x, int y, int z)
     {
+<<<<<<< Updated upstream
         // Maths ahead! A lot of perlin noise mixed together to make some cool generation!
         float height = 0f;
 
@@ -272,5 +281,37 @@ public class MapGenerator : BaseGeneration
     short EndWall(int x, int y, int z, float height)
     {
         return endWall;
+=======
+        if (x*x + z*z > mapLimit*mapLimit+1)
+        {
+            return 7;
+        }
+
+        if (y != 0)
+        {
+            return -1;
+        }
+
+        if (x*x + z*z < (mapLimit/nBiomes)*(mapLimit/nBiomes)+1)
+        {
+            return 0;
+        }
+
+        if (x*x + z*z < (2*mapLimit/nBiomes)*(2*mapLimit/nBiomes)+1)
+        {
+            return 2;
+        }
+
+        if (x*x + z*z < (3*mapLimit/nBiomes)*(3*mapLimit/nBiomes)+1)
+        {
+            return 5;
+        }
+
+        if (x*x + z*z < (4*mapLimit/nBiomes)*(4*mapLimit/nBiomes)+1)
+        {
+            return 7;
+        }
+        return -1;
+>>>>>>> Stashed changes
     }
 }
