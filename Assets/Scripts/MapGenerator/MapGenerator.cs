@@ -3,7 +3,6 @@ using VoxelMaster;
 
 public class MapGenerator : BaseGeneration
 {
-<<<<<<< Updated upstream
     [Header("Map Size and Parameters")]
     [SerializeField] 
     int mapLimit;
@@ -17,7 +16,6 @@ public class MapGenerator : BaseGeneration
     [SerializeField] 
     float noiseScale;
 
-    // Florest parameters
     [Header("Florest Parameters")]
     [SerializeField] float treeHeight = 10;
 
@@ -32,9 +30,6 @@ public class MapGenerator : BaseGeneration
     float startArea;
 
     float startArea2;
-
-
-    // Blocks names
 
     short endWall = 7;
     
@@ -71,22 +66,11 @@ public class MapGenerator : BaseGeneration
         bioma3 = desertoGrass;
         
         bioma4 = planiceGrass;
-=======
-    [SerializeField] int mapLimit;
-    [SerializeField] int nBiomes;
-
-    void start()
-    {
->>>>>>> Stashed changes
-    }
 
     public override short Generation(int x, int y, int z)
     {
-<<<<<<< Updated upstream
-        // Maths ahead! A lot of perlin noise mixed together to make some cool generation!
         float height = 0f;
 
-        // Height data, regardless of biome
         float mountainContrib = VoxelGeneration.Remap(Mathf.PerlinNoise(x / 150f, z / 150f), 0.33f, 0.66f, 0, 1) * 40f;
 
         float desertContrib = 0f;
@@ -95,7 +79,6 @@ public class MapGenerator : BaseGeneration
 
         float detailContrib = VoxelGeneration.Remap(Mathf.PerlinNoise(x / 20f, z / 20f), 0, 1, -1, 1) * 5f;
 
-        // Biomes
         float detailMult = VoxelGeneration.Remap(Mathf.PerlinNoise(x / 30f, z / 30f), 0.33f, 0.66f, 0, 1);
 
         float mountainBiome = VoxelGeneration.Remap(Mathf.PerlinNoise(x / 100f, z / 100f), 0.33f, 0.66f, 0, 1);
@@ -105,24 +88,17 @@ public class MapGenerator : BaseGeneration
 
         float oceanBiome = VoxelGeneration.Remap(Mathf.PerlinNoise(x / 500f, z / 500f), 0.33f, 0.66f, 0, 1);
 
-        // Add biome contrib
         float mountainFinal = (mountainContrib * mountainBiome) + (detailContrib * detailMult) + 20;
 
         float desertFinal = (desertContrib * desertBiome) + (detailContrib * detailMult) + 20;
 
         float oceanFinal = (oceanContrib * oceanBiome);
 
-        // Final contrib
         height = Mathf.Lerp(mountainFinal, desertFinal, desertBiome);
 
         height = Mathf.Lerp(height, oceanFinal, oceanBiome);
 
         height = Mathf.Floor(height);
-
-        // Trees!
-        //float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
-
-        //float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
 
         radio = (x * x) + (z * z);
 
@@ -210,22 +186,23 @@ public class MapGenerator : BaseGeneration
 
     short Bioma1(int x, int y, int z, float height)
     {
-        //float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
+
         float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
+        
         float florestArea = Mathf.PerlinNoise(x, z);
 
         if (y > height)
         {
             startArea = ((x * x) - startPoint.localPosition.x) + ((z * z) - startPoint.localPosition.z);
+
             startArea2 = Mathf.Sqrt(startArea);
 
-            // Monta a área de início
             if (startArea2 < startAreaRadius)
             {
                 return air;
             }
-            // Monta a floresta
+
             if (florestArea >= 0.25f)
             {
                 if (treeTrunk >= 0.75f && height > 0 && y <= height + treeHeight)
@@ -238,11 +215,13 @@ public class MapGenerator : BaseGeneration
                 {
                     return florestaDirty;
                 }
+
                 else
                 {
                     return air;
                 }
             }
+
             else
             {
                 return air;
@@ -260,6 +239,7 @@ public class MapGenerator : BaseGeneration
 
         return bioma2;
     }
+
     short Bioma3(int x, int y, int z, float height)
     {
         if (y > height)
@@ -269,6 +249,7 @@ public class MapGenerator : BaseGeneration
 
         return bioma3;
     }
+
     short Bioma4(int x, int y, int z, float height)
     {
         if (y > height)
@@ -278,40 +259,36 @@ public class MapGenerator : BaseGeneration
 
         return bioma4;
     }
+
     short EndWall(int x, int y, int z, float height)
     {
         return endWall;
-=======
-        if (x*x + z*z > mapLimit*mapLimit+1)
-        {
-            return 7;
-        }
 
         if (y != 0)
         {
             return -1;
         }
 
-        if (x*x + z*z < (mapLimit/nBiomes)*(mapLimit/nBiomes)+1)
+        if (x * x + z * z < (mapLimit / nBiomes) * (mapLimit / nBiomes) + 1)
         {
             return 0;
         }
 
-        if (x*x + z*z < (2*mapLimit/nBiomes)*(2*mapLimit/nBiomes)+1)
+        if (x * x + z * z < (2 * mapLimit / nBiomes) * (2 * mapLimit / nBiomes) + 1)
         {
             return 2;
         }
 
-        if (x*x + z*z < (3*mapLimit/nBiomes)*(3*mapLimit/nBiomes)+1)
+        if (x * x + z * z < (3 * mapLimit / nBiomes) * (3 * mapLimit / nBiomes) + 1)
         {
             return 5;
         }
 
-        if (x*x + z*z < (4*mapLimit/nBiomes)*(4*mapLimit/nBiomes)+1)
+        if (x * x + z * z < (4 * mapLimit / nBiomes) * (4 * mapLimit / nBiomes) + 1)
         {
             return 7;
         }
+
         return -1;
->>>>>>> Stashed changes
     }
 }
