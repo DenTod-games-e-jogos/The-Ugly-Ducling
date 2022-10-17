@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.Localization.Settings;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -56,7 +53,7 @@ public class MainMenuController : MonoBehaviour
 
     public void OnOptionsClick()
     {
-/*        NuovoGioco.text = "Nuovo Gioco";
+        NuovoGioco.text = "Nuovo Gioco";
 
         CaricaGioco.text = "Carica Gioco";
 
@@ -91,7 +88,7 @@ public class MainMenuController : MonoBehaviour
                 OpzioniDiLingua[1].text = NuovoGioco.text;
             }
         }
-*/
+
         GoToOptionsMenu();
     }
 
