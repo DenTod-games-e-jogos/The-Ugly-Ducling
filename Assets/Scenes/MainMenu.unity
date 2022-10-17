@@ -129,18 +129,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1631591592923985576}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1290457137 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1631591592402392597, guid: c22e53d03c863b3499cebb0853a6de0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1631591592923985576}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1345583441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,12 +253,6 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 466654463264452391, guid: 133cf990266f7e045bdb444b5d48baac,
     type: 3}
   m_PrefabInstance: {fileID: 466654464932666432}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2115034647 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1631591592682582973, guid: c22e53d03c863b3499cebb0853a6de0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1631591592923985576}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &466654464932666432
 PrefabInstance:
@@ -477,31 +459,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
-        type: 3}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 2115034647}
-    - target: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
-        type: 3}
-      propertyPath: languageDropdown
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
-        type: 3}
-      propertyPath: OpzioniDiLingua.Array.data[0]
-      value: 
-      objectReference: {fileID: 1290457137}
-    - target: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
-        type: 3}
-      propertyPath: OpzioniDiLingua.Array.data[1]
-      value: 
-      objectReference: {fileID: 1290457137}
-    - target: {fileID: 8771243493703383482, guid: c22e53d03c863b3499cebb0853a6de0f,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 72.8215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22e53d03c863b3499cebb0853a6de0f, type: 3}
