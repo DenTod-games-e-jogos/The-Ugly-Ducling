@@ -612,15 +612,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1631591592995230859}
-  optionsMenu: {fileID: 0}
-  languageDropdown: {fileID: 0}
+  optionsMenu: {fileID: 1631591592682582973}
   NuovoGioco: {fileID: 1631591592685703093}
   CaricaGioco: {fileID: 1631591592071476950}
   EsciDalGioco: {fileID: 1631591592808098379}
   Opzioni: {fileID: 1631591592402392597}
   OpzioniDiLingua:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1631591592402392597}
+  - {fileID: 1631591592402392597}
   CursorTexture: {fileID: 2800000, guid: ba411c53d13dbc14b95ff3a5cb172131, type: 3}
   CursMode: 0
 --- !u!1 &1631591592808098377
