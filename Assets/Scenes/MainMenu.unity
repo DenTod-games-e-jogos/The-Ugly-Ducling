@@ -257,6 +257,11 @@ PrefabInstance:
       propertyPath: mainMenu
       value: 
       objectReference: {fileID: 1277785793}
+    - target: {fileID: 3846750154514145262, guid: 22b8b42fd3a983b4281b3ae619fa9990,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22b8b42fd3a983b4281b3ae619fa9990, type: 3}
 --- !u!114 &1425641300 stripped

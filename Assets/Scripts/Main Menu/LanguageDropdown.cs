@@ -7,7 +7,8 @@ using UnityEngine.Localization.Settings;
 public class LanguageDropdown : MonoBehaviour
 {
     [SerializeField]
-    public Dropdown languageDropdown;
+    Dropdown languageDropdown;
+
     IEnumerator Start()
     {
         yield return LocalizationSettings.InitializationOperation;
@@ -44,5 +45,4 @@ public class LanguageDropdown : MonoBehaviour
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
-
 }
