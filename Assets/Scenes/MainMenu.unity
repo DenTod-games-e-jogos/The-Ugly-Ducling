@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &1412737683 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
@@ -141,6 +142,8 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 1777521747}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of e7af415 (saved)
 --- !u!1001 &1777521747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -153,6 +156,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas 2
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1631591592709284793, guid: c22e53d03c863b3499cebb0853a6de0f,
         type: 3}
       propertyPath: m_IsActive
@@ -163,6 +167,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of e7af415 (saved)
     - target: {fileID: 1631591592709284797, guid: c22e53d03c863b3499cebb0853a6de0f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -268,6 +274,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1631591592709284798, guid: c22e53d03c863b3499cebb0853a6de0f,
         type: 3}
       propertyPath: mainMenu
@@ -421,6 +428,10 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 2103071607}
   m_PrefabAsset: {fileID: 0}
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c22e53d03c863b3499cebb0853a6de0f, type: 3}
+>>>>>>> parent of e7af415 (saved)
 --- !u!1001 &466654464932666432
 PrefabInstance:
   m_ObjectHideFlags: 0

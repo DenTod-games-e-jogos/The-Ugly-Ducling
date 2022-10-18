@@ -194,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
   optionsMenu: {fileID: 2580106202871096}
+  languageDropdown: {fileID: 3846750154514145262}
   NuovoGioco: {fileID: 0}
   CaricaGioco: {fileID: 0}
   EsciDalGioco: {fileID: 0}
@@ -736,7 +737,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e5edd659620d2b46a75cf1bfab06034, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+--- !u!114 &3846750154514145262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8817686685878042840, guid: 6e5edd659620d2b46a75cf1bfab06034,
+    type: 3}
+  m_PrefabInstance: {fileID: 5709668985454026550}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> parent of e7af415 (saved)
 --- !u!224 &3885912668438441092 stripped
 =======
 --- !u!224 &5153771631993134180 stripped
