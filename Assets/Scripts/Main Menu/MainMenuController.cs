@@ -104,21 +104,17 @@ public class MainMenuController : MonoBehaviour
     {
         mainMenu.enabled = true;
 
-<<<<<<< Updated upstream
-        optionsMenu.SetActive(true);
-=======
+        optionsMenu.gameObject.SetActive(true);
+
         optionsMenu.enabled = false;
->>>>>>> Stashed changes
     }
 
     void GoToOptionsMenu()
     {
         optionsMenu.enabled = true;
 
-<<<<<<< Updated upstream
-        mainMenu.SetActive(true);
-=======
+        mainMenu.gameObject.SetActive(true);
+
         mainMenu.enabled = false;
->>>>>>> Stashed changes
     }
 }
