@@ -103,13 +103,13 @@ public class MainMenuController : MonoBehaviour
     {
         mainMenu.SetActive(true);
 
-        optionsMenu.SetActive(false);
+        optionsMenu.SetActive(true);
     }
 
     void GoToOptionsMenu()
     {
         optionsMenu.SetActive(true);
 
-        mainMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }

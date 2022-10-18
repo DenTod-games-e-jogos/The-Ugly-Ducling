@@ -612,7 +612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1631591592995230859}
-  optionsMenu: {fileID: 1631591592682582973}
+  optionsMenu: {fileID: 1631591592709284793, guid: 22b8b42fd3a983b4281b3ae619fa9990,
+    type: 3}
   NuovoGioco: {fileID: 1631591592685703093}
   CaricaGioco: {fileID: 1631591592071476950}
   EsciDalGioco: {fileID: 1631591592808098379}
