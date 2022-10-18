@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField] 
-    GameObject mainMenu;
+    Canvas mainMenu;
     
     [SerializeField] 
-    GameObject optionsMenu;
+    Canvas optionsMenu;
 
     [SerializeField]
     Text NuovoGioco;
@@ -50,6 +50,7 @@ public class MainMenuController : MonoBehaviour
 
     public void OnOptionsClick()
     {
+        /*
         NuovoGioco.text = "Nuovo Gioco";
 
         CaricaGioco.text = "Carica Gioco";
@@ -85,7 +86,7 @@ public class MainMenuController : MonoBehaviour
                 OpzioniDiLingua[1].text = NuovoGioco.text;
             }
         }
-
+        */
         GoToOptionsMenu();
     }
 
@@ -101,15 +102,23 @@ public class MainMenuController : MonoBehaviour
 
     void GoToMainMenu()
     {
-        mainMenu.SetActive(true);
+        mainMenu.enabled = true;
 
+<<<<<<< Updated upstream
         optionsMenu.SetActive(true);
+=======
+        optionsMenu.enabled = false;
+>>>>>>> Stashed changes
     }
 
     void GoToOptionsMenu()
     {
-        optionsMenu.SetActive(true);
+        optionsMenu.enabled = true;
 
+<<<<<<< Updated upstream
         mainMenu.SetActive(true);
+=======
+        mainMenu.enabled = false;
+>>>>>>> Stashed changes
     }
 }
