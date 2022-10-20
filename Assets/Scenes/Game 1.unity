@@ -12419,6 +12419,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a883e5638f053ed42ada63a8ad333554, type: 3}
+--- !u!1 &2979588476536438396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6638079530212236619, guid: a883e5638f053ed42ada63a8ad333554,
+    type: 3}
+  m_PrefabInstance: {fileID: 2979588476536438395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2979588476536438397 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 198676483610259762, guid: a883e5638f053ed42ada63a8ad333554,
+    type: 3}
+  m_PrefabInstance: {fileID: 2979588476536438395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2979588476536438398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979588476536438396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18ed12b29a9aa3479eb5083b95f899d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocalizedAssetReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  m_UpdateAsset:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2979588476536438397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: set_clip
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 2979588476536438397}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1001 &3030021221649589033
 PrefabInstance:
   m_ObjectHideFlags: 0
