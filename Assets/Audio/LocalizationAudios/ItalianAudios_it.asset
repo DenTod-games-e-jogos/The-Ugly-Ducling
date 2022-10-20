@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: ItalianAudios_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 430395548314eab4b82c1d21bc294bbf, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 30373044224
+    m_Localized: a883e5638f053ed42ada63a8ad333554
+    m_Metadata:
+      m_Items: []
+  - m_Id: 602056679424
+    m_Localized: 279e5a6c0d2d87348ad5f9479e7b75ef
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

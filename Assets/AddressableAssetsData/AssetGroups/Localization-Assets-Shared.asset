@@ -29,6 +29,22 @@ MonoBehaviour:
     m_Address: Assets/Language/LanguagePropsMaterial/PropsMaterial Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 430395548314eab4b82c1d21bc294bbf
+    m_Address: Assets/Audio/LocalizationAudios/ItalianAudios Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: a883e5638f053ed42ada63a8ad333554
+    m_Address: VoiceOfMark
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+  - m_GUID: 279e5a6c0d2d87348ad5f9479e7b75ef
+    m_Address: MarkVoice
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 284c56234f885fa47958c082bf1fa85a, type: 2}
   m_SchemaSet:

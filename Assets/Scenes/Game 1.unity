@@ -12445,9 +12445,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LocalizedAssetReference:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:430395548314eab4b82c1d21bc294bbf
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 602056679424
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
