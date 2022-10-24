@@ -19,8 +19,6 @@ public class MissionHouse : MonoBehaviour
 
 		ShowMissionInsideHouse.enabled = true;
 		
-		ShowMissionInsideHouse.text = "Find a key to open the door!";
-
 		yield return new WaitForSeconds(6.0f);
 
 		ShowMissionInsideHouse.enabled = false;

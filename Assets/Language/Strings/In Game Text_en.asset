@@ -16,18 +16,16 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 679c87211f6b93c4e8ea65583afb5177, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 8653370279609499651
+    m_Items: []
   m_TableData:
   - m_Id: 29425541120
     m_Localized: Find a key to open the door
     m_Metadata:
-      m_Items:
-      - rid: 8653370279609499651
+      m_Items: []
+  - m_Id: 9529371318951936
+    m_Localized: Find four chains on the map
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 8653370279609499651
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 0020e6d906000000
+    RefIds: []

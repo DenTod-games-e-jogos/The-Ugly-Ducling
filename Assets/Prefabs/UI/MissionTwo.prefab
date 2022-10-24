@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7801482551415512777}
   - component: {fileID: 1707334264129362371}
   m_Layer: 5
-  m_Name: MissionOne
+  m_Name: MissionTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,8 @@ GameObject:
   - component: {fileID: 3017626259451859302}
   - component: {fileID: 9132002718514796291}
   - component: {fileID: 7182737309887682421}
-  - component: {fileID: 1775364942437094101}
+  - component: {fileID: 4961562429850417363}
+  - component: {fileID: 5836089188300701013}
   m_Layer: 5
   m_Name: HouseMission
   m_TagString: Untagged
@@ -182,7 +183,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!114 &1775364942437094101
+--- !u!114 &4961562429850417363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,20 +196,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 7672286047631048708
+  - rid: 1175476432314040321
   references:
     version: 2
     RefIds:
-    - rid: 7672286047631048708
+    - rid: 1175476432314040321
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
         asm: Unity.Localization}
       data:
         m_Target: {fileID: 7182737309887682421}
         m_TrackedProperties:
           items:
-          - rid: 7672286047631048709
+          - rid: 1175476432314040322
         m_UpdateType: 0
-    - rid: 7672286047631048709
+    - rid: 1175476432314040322
       type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
       data:
@@ -222,3 +223,31 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
         m_PropertyPath: m_Text
+--- !u!114 &5836089188300701013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7618830764117863454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:679c87211f6b93c4e8ea65583afb5177
+    m_TableEntryReference:
+      m_KeyId: 9529371318951936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds: []

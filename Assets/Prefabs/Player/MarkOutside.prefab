@@ -1515,6 +1515,7 @@ GameObject:
   - component: {fileID: 5542408990980084909}
   - component: {fileID: 139156587}
   - component: {fileID: 2585274344279415385}
+  - component: {fileID: 8580706007828768707}
   m_Layer: 0
   m_Name: MarkOutside
   m_TagString: Player
@@ -1650,6 +1651,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30104edb48c46f54081e2bb78c7fd9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8580706007828768707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768683559230454363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c316ba72f08179c4785552eecfcb0a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowMission: {fileID: 0}
 --- !u!1 &1768683559230454365
 GameObject:
   m_ObjectHideFlags: 0

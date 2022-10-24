@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: "Objetivo\t Cena Game 1"
     m_Metadata:
       m_Items: []
+  - m_Id: 9529371318951936
+    m_Key: "Objetivo\t Cena Game 2"
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
