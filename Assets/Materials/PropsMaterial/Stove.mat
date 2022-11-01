@@ -90,7 +90,7 @@ Material:
     - _Segmented: 1
     - _ShnIntense: 0
     - _ShnOverlap: 0
-    - _ShnRange: 0.15
+    - _ShnRange: 1
     - _ShnSmooth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

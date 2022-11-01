@@ -79,7 +79,7 @@ Material:
     - _Offset: 0
     - _Parallax: 0.02
     - _Segmented: 1
-    - _ShnIntense: 1
+    - _ShnIntense: 0
     - _ShnOverlap: 0
     - _ShnRange: 1
     - _ShnSmooth: 0
