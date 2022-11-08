@@ -26,6 +26,10 @@ MonoBehaviour:
     m_Localized: Trova quattro catene sulla mappa
     m_Metadata:
       m_Items: []
+  - m_Id: 14851612981846016
+    m_Localized: Trova tre corpi fuori casa
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

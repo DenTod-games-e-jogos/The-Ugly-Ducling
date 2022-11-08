@@ -26,6 +26,10 @@ MonoBehaviour:
     m_Localized: Find four chains on the map
     m_Metadata:
       m_Items: []
+  - m_Id: 14851612981846016
+    m_Localized: Find three bodies outside of the house
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
