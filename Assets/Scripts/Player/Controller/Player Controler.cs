@@ -816,6 +816,7 @@ public partial class @PlayerControler : IInputActionCollection2, IDisposable
             }
         }
     }
+    
     public CharactercontrollerActions @Charactercontroller => new CharactercontrollerActions(this);
 
     readonly InputActionMap m_UI;
@@ -839,6 +840,7 @@ public partial class @PlayerControler : IInputActionCollection2, IDisposable
     readonly InputAction m_UI_RightClick;
     
     readonly InputAction m_UI_TrackedDevicePosition;
+
     readonly InputAction m_UI_TrackedDeviceOrientation;
     
     public struct UIActions
