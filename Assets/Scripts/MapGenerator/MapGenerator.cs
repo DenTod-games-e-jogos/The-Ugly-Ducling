@@ -268,7 +268,7 @@ public class MapGenerator : BaseGeneration
     {
         return endWall;
 
-        if (y != 0)
+        /*if (y != 0)
         {
             if (x * x + z * z < (mapLimit / nBiomes) * (mapLimit / nBiomes) + 1)
             {
@@ -291,6 +291,6 @@ public class MapGenerator : BaseGeneration
             }
         }
         
-        return -1;
+        return -1; */
     }
 }
