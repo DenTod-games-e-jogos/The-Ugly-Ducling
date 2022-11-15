@@ -266,9 +266,7 @@ public class MapGenerator : BaseGeneration
 
     short EndWall(int x, int y, int z, float height)
     {
-        return endWall;
-
-        /*if (y != 0)
+        if (y != 0)
         {
             if (x * x + z * z < (mapLimit / nBiomes) * (mapLimit / nBiomes) + 1)
             {
@@ -291,6 +289,6 @@ public class MapGenerator : BaseGeneration
             }
         }
         
-        return -1; */
+        return -1;
     }
 }
