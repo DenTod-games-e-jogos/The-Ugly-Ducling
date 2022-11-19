@@ -23,8 +23,14 @@ public class MapGenerator : BaseGeneration
     [SerializeField] 
     float startAreaRadius = 20;
 
-    [SerializeField] 
+    [SerializeField]
     Transform startPoint = null;
+
+    [Header("Purple Mangrove Parameters")]
+    [SerializeField]
+    float lakeSize = 10f;
+    [SerializeField]
+    float mangroveTreeHeight = 4f;
 
     float radio;
 
@@ -188,12 +194,12 @@ public class MapGenerator : BaseGeneration
         return air;
     }
 
-    short Bioma1(int x, int y, int z, float height)
+    short Bioma1(int x, int y, int z, float height) //Floresta escura
     {
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
 
         float treeLeaves = Mathf.PerlinNoise(x / 5f, z / 5f);
-        
+
         float florestArea = Mathf.PerlinNoise(x, z);
 
         if (y > height)
@@ -234,17 +240,50 @@ public class MapGenerator : BaseGeneration
 
         return bioma1;
     }
-    short Bioma2(int x, int y, int z, float height)
+    short Bioma2(int x, int y, int z, float height) //Mangue Roxo
     {
+        float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
+
+        float treeLeaves = Mathf.PerlinNoise(x / 1.0f, z / 1.0f);
+
+        float florestArea = Mathf.PerlinNoise(x, z);
+
         if (y > height)
         {
-            return air;
+            if (florestArea >= 0.0f)
+            {
+                //Cria as arvores
+                if (treeTrunk >= .92f && height > 0 && y <= height + mangroveTreeHeight)
+                {
+                    return desertoDirty;
+                }
+                //Cria as folhas
+                for (int i = x-2; i<= x+2; i++)
+                {
+                    for (int j = z-2; j <= z + 2; j++)
+                    {
+                        if (Mathf.PerlinNoise(i / 0.3543f, j / 0.3543f) >= .92f)
+                        {
+                            if(y > (height + mangroveTreeHeight) && y < (height + mangroveTreeHeight + 5))
+                            {
+                                return florestaDirty;
+                            }
+                        }
+                    }
+                }
+                return air;
+            }
+
+            else
+            {
+                return air;
+            }
         }
 
         return bioma2;
     }
 
-    short Bioma3(int x, int y, int z, float height)
+    short Bioma3(int x, int y, int z, float height) //Deserto Vermelho
     {
         if (y > height)
         {
@@ -254,7 +293,7 @@ public class MapGenerator : BaseGeneration
         return bioma3;
     }
 
-    short Bioma4(int x, int y, int z, float height)
+    short Bioma4(int x, int y, int z, float height) //Planicie Sombria
     {
         if (y > height)
         {
