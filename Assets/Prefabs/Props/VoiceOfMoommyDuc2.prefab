@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32458017493648179}
   - component: {fileID: 5157983601722271303}
+  - component: {fileID: 743938448988434905}
   m_Layer: 0
   m_Name: VoiceOfMoommyDuc2
   m_TagString: Untagged
@@ -44,17 +45,17 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f18fd71266f738540984b1892a006ae1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 100
-  MaxDistance: 500
+  MinDistance: 10
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -129,6 +130,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &743938448988434905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808537736043747721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24d0d8cb5521f24a917ffab51c2607c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScreamMoommyDuc: {fileID: 5157983601722271303}
 --- !u!1 &2045189487783942850
 GameObject:
   m_ObjectHideFlags: 0
