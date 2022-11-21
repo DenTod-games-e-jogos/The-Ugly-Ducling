@@ -29,6 +29,7 @@ public class MapGenerator : BaseGeneration
     [Header("Purple Mangrove Parameters")]
     [SerializeField]
     float lakeSize = 10f;
+    
     [SerializeField]
     float mangroveTreeHeight = 4f;
 
@@ -240,6 +241,7 @@ public class MapGenerator : BaseGeneration
 
         return bioma1;
     }
+
     short Bioma2(int x, int y, int z, float height) //Mangue Roxo
     {
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
@@ -271,6 +273,7 @@ public class MapGenerator : BaseGeneration
                         }
                     }
                 }
+
                 return air;
             }
 
