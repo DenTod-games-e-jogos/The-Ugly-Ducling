@@ -65,6 +65,8 @@ public class MapGenerator : BaseGeneration
     
     short planiceGrass = 7;
 
+    short MangroveLake = 8;
+
     new public void Start()
     {
         endWall = planiceGrass;
@@ -195,7 +197,7 @@ public class MapGenerator : BaseGeneration
         return air;
     }
 
-    short Bioma1(int x, int y, int z, float height) //Floresta escura
+    short Bioma1(int x, int y, int z, float height)
     {
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
 
@@ -242,7 +244,7 @@ public class MapGenerator : BaseGeneration
         return bioma1;
     }
 
-    short Bioma2(int x, int y, int z, float height) //Mangue Roxo
+    short Bioma2(int x, int y, int z, float height)
     {
         float treeTrunk = Mathf.PerlinNoise(x / 0.3543f, z / 0.3543f);
 
@@ -250,16 +252,17 @@ public class MapGenerator : BaseGeneration
 
         float florestArea = Mathf.PerlinNoise(x, z);
 
+        lakeSize = Mathf.PerlinNoise(x, z);
+
         if (y > height)
         {
             if (florestArea >= 0.0f)
             {
-                //Cria as arvores
                 if (treeTrunk >= .92f && height > 0 && y <= height + mangroveTreeHeight)
                 {
                     return desertoDirty;
                 }
-                //Cria as folhas
+
                 for (int i = x-2; i<= x+2; i++)
                 {
                     for (int j = z-2; j <= z + 2; j++)
@@ -270,6 +273,8 @@ public class MapGenerator : BaseGeneration
                             {
                                 return florestaDirty;
                             }
+
+                            return MangroveLake;
                         }
                     }
                 }
@@ -286,7 +291,7 @@ public class MapGenerator : BaseGeneration
         return bioma2;
     }
 
-    short Bioma3(int x, int y, int z, float height) //Deserto Vermelho
+    short Bioma3(int x, int y, int z, float height)
     {
         if (y > height)
         {
@@ -296,7 +301,7 @@ public class MapGenerator : BaseGeneration
         return bioma3;
     }
 
-    short Bioma4(int x, int y, int z, float height) //Planicie Sombria
+    short Bioma4(int x, int y, int z, float height)
     {
         if (y > height)
         {
