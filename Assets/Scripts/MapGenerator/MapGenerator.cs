@@ -254,6 +254,11 @@ public class MapGenerator : BaseGeneration
 
         lakeSize = Mathf.PerlinNoise(x, z);
 
+        if (y <= lakeSize && y <= height)
+        {
+            return MangroveLake;
+        }
+
         if (y > height)
         {
             if (florestArea >= 0.0f)
@@ -273,8 +278,6 @@ public class MapGenerator : BaseGeneration
                             {
                                 return florestaDirty;
                             }
-
-                            return MangroveLake;
                         }
                     }
                 }
