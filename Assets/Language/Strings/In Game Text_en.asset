@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 29425541120
-    m_Localized: Find a key to open the door
+    m_Localized: Find a key to open the door and investigate this house
     m_Metadata:
       m_Items: []
   - m_Id: 9529371318951936
