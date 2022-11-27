@@ -3,15 +3,22 @@ using VoxelMaster;
 
 public class MapGenerator : BaseGeneration
 {
-    [Header("Map Size and Parameters")]
-    [SerializeField] 
-    int mapLimit;
+    [Header("Structure Placer Scritp")]
+    [SerializeField]
+    MapStructuresPlacer mapPlacer;
     
+    [Header("Map Size and Parameters")]
+    [SerializeField]
+    int mapLimit;
+    public int MapLimit { get => mapLimit; private set => mapLimit = value; }
+
     [SerializeField] 
     int nBiomes;
+    public int NBiomes { get => nBiomes; private set => nBiomes = value; }
     
     [SerializeField] 
     int frontier;
+    public int Frontier { get => frontier; private set => frontier = value; }
     
     [SerializeField] 
     float noiseScale;
@@ -20,11 +27,11 @@ public class MapGenerator : BaseGeneration
     [SerializeField] 
     float treeHeight = 10;
 
-    [SerializeField] 
-    float startAreaRadius = 20;
+    //[SerializeField] 
+    //float startAreaRadius = 20;
 
-    [SerializeField]
-    Transform startPoint = null;
+    //[SerializeField]
+    //Transform startPoint = null;
 
     [Header("Purple Mangrove Parameters")]
     [SerializeField]
@@ -66,6 +73,7 @@ public class MapGenerator : BaseGeneration
     short planiceGrass = 7;
 
     short MangroveLake = 8;
+
 
     new public void Start()
     {
@@ -207,11 +215,11 @@ public class MapGenerator : BaseGeneration
 
         if (y > height)
         {
-            startArea = ((x * x) - startPoint.localPosition.x) + ((z * z) - startPoint.localPosition.z);
+            startArea = ((x * x) - mapPlacer.StartPoint.x) + ((z * z) - mapPlacer.StartPoint.z);
 
             startArea2 = Mathf.Sqrt(startArea);
 
-            if (startArea2 < startAreaRadius)
+            if (startArea2 < mapPlacer.StartAreaRadius)
             {
                 return air;
             }
@@ -252,7 +260,25 @@ public class MapGenerator : BaseGeneration
 
         float florestArea = Mathf.PerlinNoise(x, z);
 
-        lakeSize = Mathf.PerlinNoise(x, z);
+        // Define local do lago
+        if ((x > mapPlacer.LakeLocal.x - mapPlacer.LakeSize) &&
+            (x < mapPlacer.LakeLocal.x + mapPlacer.LakeSize) &&
+            (z > mapPlacer.LakeLocal.z - mapPlacer.LakeSize) &&
+            (z < mapPlacer.LakeLocal.z + mapPlacer.LakeSize))
+        {
+            if (y <= height - 1)
+            {
+                return bioma2;
+            }
+            if (y <= height)
+            {
+                return bioma3;
+            }
+            if (y > height)
+            {
+                return air;
+            }
+        }
 
         if (y > height)
         {

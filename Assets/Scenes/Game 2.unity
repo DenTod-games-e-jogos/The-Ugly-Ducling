@@ -193,6 +193,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b223906e0627446929d9c3a0d35ac4, type: 3}
+--- !u!1 &704188514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8526404682974666728, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7874687133007660630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &704188519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704188514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3cb968684e4ce4abe1010fe56fab65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAreaRadius: 20
+  startPoint: {x: 0, y: 0}
+  lakeSize: 10
+  lakeLocal: {x: 0, y: 0}
 --- !u!4 &717035222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
@@ -977,6 +999,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 448932084, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: mapPlacer
+      value: 
+      objectReference: {fileID: 704188519}
     - target: {fileID: 448932084, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
       propertyPath: startPoint
       value: 
