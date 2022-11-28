@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class ShowMissionOnStart : MonoBehaviour
 {
     [SerializeField]
-    private Text ShowMission;
+    Text ShowMission;
+    
     IEnumerator Start()
     {
         ShowMission.enabled = false;

@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startAreaRadius: 20
-  startPoint: {x: 0, y: 0}
+  startPoint: {x: 0, y: 0, z: 0}
   lakeSize: 10
-  lakeLocal: {x: 0, y: 0}
+  lakeLocal: {x: 0, y: 0, z: 0}
 --- !u!4 &717035222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
