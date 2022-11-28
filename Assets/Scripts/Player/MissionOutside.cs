@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MissionHouse : MonoBehaviour 
+public class MissionOutside : MonoBehaviour 
 {
 	[SerializeField]
-	Text ShowMissionInsideHouse;
+	Text OutsideMission;
 
 	void Start() 
 	{
@@ -14,14 +14,14 @@ public class MissionHouse : MonoBehaviour
 
 	IEnumerator ShowMission()
 	{
-		ShowMissionInsideHouse.enabled = false;
+		OutsideMission.enabled = false;
 		
 		yield return new WaitForSeconds(6.0f);
 
-		ShowMissionInsideHouse.enabled = true;
+		OutsideMission.enabled = true;
 		
 		yield return new WaitForSeconds(6.0f);
 
-		ShowMissionInsideHouse.enabled = false;
+		OutsideMission.enabled = false;
 	}
 }
