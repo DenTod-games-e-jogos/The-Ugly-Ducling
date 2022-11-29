@@ -53,7 +53,7 @@ public class MapStructuresPlacer : MonoBehaviour
         var radio = Random.Range(MangroveBegin(mapLimit, frontier + lakeSize), 
         MangroveEnd(mapLimit, frontier - lakeSize));
         
-        var angle = UnityEngine.Random.Range(0.0f, 360.0f);
+        var angle = Random.Range(0.0f, 360.0f);
         
         var x = Mathf.RoundToInt(radio * Mathf.Sin(angle * Mathf.Deg2Rad));
         
