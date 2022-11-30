@@ -33,7 +33,7 @@ Material:
     - _ColIntense: 1
     - _Glossiness: 0.5
     - _Lumin: 0
-    - _MaxLight: 1
+    - _MaxLight: 0.01
     - _Metallic: 0
     - _MinLight: 0
     - _Offset: 0

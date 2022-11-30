@@ -71,9 +71,9 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Lumin: 0
-    - _MaxLight: 3
+    - _MaxLight: 0.01
     - _Metallic: 0
-    - _MinLight: 1
+    - _MinLight: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
