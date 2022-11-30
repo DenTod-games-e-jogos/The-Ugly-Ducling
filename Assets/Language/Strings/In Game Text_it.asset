@@ -25,12 +25,7 @@ MonoBehaviour:
       m_Items:
       - rid: 1575798719094718469
   - m_Id: 9529371318951936
-    m_Localized: Trova quattro catene sulla mappa
-    m_Metadata:
-      m_Items:
-      - rid: 1575798719094718469
-  - m_Id: 14851612981846016
-    m_Localized: Trova tre corpi fuori casa
+    m_Localized: Trova quattro catene nella Foresta Oscura
     m_Metadata:
       m_Items:
       - rid: 1575798719094718469

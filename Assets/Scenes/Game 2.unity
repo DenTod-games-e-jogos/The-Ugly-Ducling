@@ -1102,52 +1102,6 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 720
       objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_Text
-      value: Find four chains on the map
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 28b80fc143d759348a3f5a375ec23684,
-        type: 3}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 2356689107671088432, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 70
-      objectReference: {fileID: 0}
     - target: {fileID: 4815297473738887307, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1257,26 +1211,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OutsideMission
-      objectReference: {fileID: 0}
-    - target: {fileID: 7724017295911921982, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 673.6194
-      objectReference: {fileID: 0}
-    - target: {fileID: 7724017295911921982, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 107.4889
-      objectReference: {fileID: 0}
-    - target: {fileID: 7724017295911921982, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 303.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7724017295911921982, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 53.744
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55076ab5cb9d7554f9cf08f0fcdcfc10, type: 3}

@@ -25,12 +25,7 @@ MonoBehaviour:
       m_Items:
       - rid: 1575798719094718468
   - m_Id: 9529371318951936
-    m_Localized: Find four chains on the map
-    m_Metadata:
-      m_Items:
-      - rid: 1575798719094718468
-  - m_Id: 14851612981846016
-    m_Localized: Find three bodies outside of the house
+    m_Localized: Find four chains in the Dark Forest
     m_Metadata:
       m_Items:
       - rid: 1575798719094718468
