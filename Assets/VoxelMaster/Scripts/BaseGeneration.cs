@@ -11,6 +11,7 @@ namespace VoxelMaster
         }
         public virtual void Start()
         {
+            
         }
     }
 }

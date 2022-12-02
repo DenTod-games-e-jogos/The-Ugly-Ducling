@@ -8,16 +8,19 @@ public class ShapesExample : MonoBehaviour
 
     void Awake()
     {
-        terrain = GetComponent<VoxelTerrain>(); // Get the terrain
+        terrain = GetComponent<VoxelTerrain>();
+
         Generate();
     }
 
     void Generate()
     {
-        terrain.Fill(new Vector3(-10, 0, -10), new Vector3(10, 1, 10), 1); // Fill a zone.
-        terrain.Sphere(new Vector3(0, 10, 0), 10, 1); // Create a sphere
-        terrain.Sphere(new Vector3(5, 15, -5), 5, -1); // Carve in that last sphere
+        terrain.Fill(new Vector3(-10, 0, -10), new Vector3(10, 1, 10), 1);
+        
+        terrain.Sphere(new Vector3(0, 10, 0), 10, 1);
 
-        terrain.FastRefresh(); // Refresh!
+        terrain.Sphere(new Vector3(5, 15, -5), 5, -1);
+
+        terrain.FastRefresh();
     }
 }

@@ -3,21 +3,24 @@ using VoxelMaster;
 
 public class MapGenerator : BaseGeneration
 {
-    [Header("Structure Placer Scritp")]
+    [Header("Structure Placer Script")]
     [SerializeField]
     MapStructuresPlacer mapPlacer;
     
     [Header("Map Size and Parameters")]
     [SerializeField]
     int mapLimit;
+
     public int MapLimit { get => mapLimit; private set => mapLimit = value; }
 
     [SerializeField] 
     int nBiomes;
+
     public int NBiomes { get => nBiomes; private set => nBiomes = value; }
     
     [SerializeField] 
     int frontier;
+
     public int Frontier { get => frontier; private set => frontier = value; }
     
     [SerializeField] 
@@ -26,12 +29,6 @@ public class MapGenerator : BaseGeneration
     [Header("Florest Parameters")]
     [SerializeField] 
     float treeHeight = 10;
-
-    //[SerializeField] 
-    //float startAreaRadius = 20;
-
-    //[SerializeField]
-    //Transform startPoint = null;
 
     [Header("Purple Mangrove Parameters")]
     [SerializeField]
