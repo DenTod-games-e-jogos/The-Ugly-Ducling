@@ -358,6 +358,15 @@ public class World : MonoBehaviour
                     Structure.MakeTree(pos, modifications, biome.minTreeHeight, biome.maxTreeHeight);
                 }
             }
+
+            if (Noise.Get2DPerlin(new Vector2(pos.x, -pos.z), 0, biome.houseZoneScale) > biome.houseZoneThreshold)
+            {
+                if (Noise.Get2DPerlin(new Vector2(pos.x, pos.z), 0, biome.housePlacementScale) > 
+                biome.housePlacementThreshold)
+                {
+                    Structure.MakeHouse(pos, modifications, biome.minHouseHeight, biome.maxHouseHeight);
+                }
+            }
         }
 
         return voxelValue;
