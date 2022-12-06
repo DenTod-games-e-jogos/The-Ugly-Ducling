@@ -80,11 +80,15 @@ namespace Player
 
                     print("Is Grounder?" + isGrounded);
 
-                if (isGrounded)
-                {
-                    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+                    if (isGrounded)
+                    {
+                        playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+                    }
+
+                    playerVelocity.y += gravityValue * Time.deltaTime;
+
+                    mark.Move(playerVelocity * Time.deltaTime);
                 }
-            }
 
                 if(Input.GetKey(A))
                 {
