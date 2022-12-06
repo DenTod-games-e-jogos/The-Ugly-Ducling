@@ -20,6 +20,7 @@ public class LogoScreen : MonoBehaviour
 
         ChangeScene();    
     }
+
     void ChangeScene()
     {
         SceneManager.LoadScene("MainMenu");

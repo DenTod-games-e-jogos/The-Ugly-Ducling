@@ -46,7 +46,8 @@ public class FlyingCameraControl : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.right * Mathf.Clamp(lookingDirection.x * Time.deltaTime * rotationSpeed, -90, 90), Space.World);
+        transform.Rotate(Vector3.right * Mathf.Clamp(lookingDirection.x * Time.deltaTime * rotationSpeed, -90, 90), 
+        Space.World);
 
         transform.Translate(movingDirection*travelSpeed);
     }
