@@ -32,6 +32,16 @@ namespace Player
 
         Animator anim;
 
+        float jumpHeight = 10.0f;
+
+        [SerializeField] 
+        float gravityValue = -1.5f;
+
+        public bool isGrounded = false;
+
+        [SerializeField]
+        Vector3 playerVelocity;
+
         void Awake()
         {
             LuzPlayer = GetComponentInChildren<Light>();
@@ -55,6 +65,27 @@ namespace Player
 
             if(mark.isGrounded)
             {
+                isGrounded = mark.isGrounded;
+
+                if (isGrounded && playerVelocity.y < 0)
+                {
+                    isGrounded = true;
+
+                    playerVelocity.y = 0.0f;
+                }
+
+                if (Input.GetButtonDown("Jump"))
+                {
+                    print("Botão de pulo apertado");
+
+                    print("Is Grounder?" + isGrounded);
+
+                if (isGrounded)
+                {
+                    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+                }
+            }
+
                 if(Input.GetKey(A))
                 {
                     Vector3 position = transform.TransformDirection(Vector3.right *
