@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8526404682974666729}
   - component: {fileID: 8526404682974666735}
   - component: {fileID: 448932084}
+  - component: {fileID: 597459688}
   m_Layer: 0
   m_Name: Voxel Terrain
   m_TagString: Untagged
@@ -85,10 +86,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1037f3e94b560048aebe0098d2331e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapPlacer: {fileID: 597459688}
   mapLimit: 4000
   nBiomes: 4
   frontier: 150
   noiseScale: 150
   treeHeight: 10
+  lakeSize: 10
+  mangroveTreeHeight: 4
+--- !u!114 &597459688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526404682974666728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3cb968684e4ce4abe1010fe56fab65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   startAreaRadius: 20
-  startPoint: {fileID: 0}
+  startPoint: {x: 0, y: 0, z: 0}
+  lakeSize: 10
+  lakeLocal: {x: 0, y: 0, z: 0}
