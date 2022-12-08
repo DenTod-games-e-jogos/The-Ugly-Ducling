@@ -1537,11 +1537,6 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 727514717}
-    - target: {fileID: 8526404682974666735, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
-        type: 3}
-      propertyPath: destroyUnusedChunks
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
 --- !u!1001 &9105586580948682022

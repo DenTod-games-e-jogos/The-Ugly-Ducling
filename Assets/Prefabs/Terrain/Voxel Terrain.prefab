@@ -72,8 +72,8 @@ MonoBehaviour:
   camera: {fileID: 0}
   generationDistance: 128
   updateDistance: 16
-  chunksPerFrame: 4
-  destroyUnusedChunks: 1
+  chunksPerFrame: 16
+  destroyUnusedChunks: 0
 --- !u!114 &448932084
 MonoBehaviour:
   m_ObjectHideFlags: 0
