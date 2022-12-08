@@ -1263,12 +1263,12 @@ PrefabInstance:
     - target: {fileID: 7484713196928799075, guid: 2fb3b45fa665c2347bbfaeb86d63b3d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7484713196928799075, guid: 2fb3b45fa665c2347bbfaeb86d63b3d4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7484713196928799075, guid: 2fb3b45fa665c2347bbfaeb86d63b3d4,
         type: 3}
@@ -1304,6 +1304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484713196928799075, guid: 2fb3b45fa665c2347bbfaeb86d63b3d4,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7824118505588837337, guid: 2fb3b45fa665c2347bbfaeb86d63b3d4,
         type: 3}
@@ -1532,6 +1537,11 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 727514717}
+    - target: {fileID: 8526404682974666735, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
+        type: 3}
+      propertyPath: destroyUnusedChunks
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
 --- !u!1001 &9105586580948682022
