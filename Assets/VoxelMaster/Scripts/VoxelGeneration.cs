@@ -25,7 +25,7 @@ namespace VoxelMaster
 
         [Range(1, 64)]
         [Tooltip("The amount of chunks per frame to generate, lower values makes chunk generation slower, but less laggy, while high values makes generation faster, but laggier.")]
-        public int chunksPerFrame = 4;
+        public int chunksPerFrame = 16;
 
         [Header("Chunk settings")]
         [Tooltip("Destroy chunks that haven't been used.\nIf disabled, chunks are preserved indefinitely, allows faster rendering of already generated unused chunks, but will eat up memory.")]
