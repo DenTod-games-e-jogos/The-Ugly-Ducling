@@ -9,7 +9,7 @@ public class MapGenerator : BaseGeneration
     
     [Header("Map Size and Parameters")]
     [SerializeField]
-    int mapLimit;
+    int mapLimit = 100000;
 
     public int MapLimit { get => mapLimit; private set => mapLimit = value; }
 
