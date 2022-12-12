@@ -8,7 +8,6 @@ public class MapGenerator : BaseGeneration
     MapStructuresPlacer mapPlacer;
     
     [Header("Map Size and Parameters")]
-    [SerializeField]
     int mapLimit = 100000;
 
     public int MapLimit { get => mapLimit; private set => mapLimit = value; }
