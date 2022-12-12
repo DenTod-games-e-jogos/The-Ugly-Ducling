@@ -1373,6 +1373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 448932084, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: mapLimit
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 8526404682974666728, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_Name
