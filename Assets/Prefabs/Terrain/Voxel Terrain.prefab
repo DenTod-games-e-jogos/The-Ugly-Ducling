@@ -87,7 +87,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapPlacer: {fileID: 597459688}
-  mapLimit: 4000
   nBiomes: 4
   frontier: 150
   noiseScale: 150
@@ -110,3 +109,11 @@ MonoBehaviour:
   startPoint: {x: 0, y: 0, z: 0}
   lakeSize: 10
   lakeLocal: {x: 0, y: 0, z: 0}
+  referenceStartPoint: {x: 0, y: 0, z: 0}
+  distanceFromStartPoint: 20
+  StoreHouseGameObject: {fileID: 1674802081922600242, guid: dc4f96db9e5c9094b8b0aeba8d96078c,
+    type: 3}
+  spwnedStorageHouseLocation: {fileID: 0}
+  chainsBetweenStartPointAndStoreHouse: 4
+  ChaingGameObject: {fileID: 6798164870752325754, guid: 0c4f2d077b76a68408e35022ffda9692,
+    type: 3}

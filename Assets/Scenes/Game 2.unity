@@ -890,32 +890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 448932084, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: mapLimit
-      value: 100000
-      objectReference: {fileID: 0}
-    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: ChaingGameObject
-      value: 
-      objectReference: {fileID: 6798164870752325754, guid: 0c4f2d077b76a68408e35022ffda9692,
-        type: 3}
-    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: StoreHouseGameObject
-      value: 
-      objectReference: {fileID: 1674802081922600242, guid: dc4f96db9e5c9094b8b0aeba8d96078c,
-        type: 3}
-    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: distanceFromStartPoint
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: spwnedStorageHouseLocation
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
-      propertyPath: chainsBetweenStartPointAndStoreHouse
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8526404682974666728, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_Name
