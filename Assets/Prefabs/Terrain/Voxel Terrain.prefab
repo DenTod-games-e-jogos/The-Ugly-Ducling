@@ -108,8 +108,8 @@ MonoBehaviour:
   startAreaRadius: 20
   startPoint: {x: 0, y: 0, z: 0}
   lakeSize: 10
-  lakeLocal: {x: 0, y: 0, z: 0}
-  referenceStartPoint: {x: 0, y: 0, z: 0}
+  lakeLocal: {x: 10, y: 0, z: 10}
+  referenceStartPoint: {x: 30, y: 0, z: 15}
   distanceFromStartPoint: 20
   StoreHouseGameObject: {fileID: 1674802081922600242, guid: dc4f96db9e5c9094b8b0aeba8d96078c,
     type: 3}
