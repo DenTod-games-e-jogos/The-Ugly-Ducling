@@ -28,7 +28,6 @@ public class MapStructuresPlacer : MonoBehaviour
 
     [SerializeField]
     GameObject StoreHouseGameObject = null;
-    public Transform spwnedStorageHouseLocation = null;
 
     [SerializeField]
     int chainsBetweenStartPointAndStoreHouse = 1;
@@ -76,12 +75,13 @@ public class MapStructuresPlacer : MonoBehaviour
         var z = Mathf.RoundToInt(distanceFromStartPoint * Mathf.Cos(angle * Mathf.Deg2Rad));
 
         Vector3 storeHouseLocation = new Vector3(x, 0, z);
+
         var storeHouse = Instantiate(StoreHouseGameObject, storeHouseLocation, Quaternion.identity);
-        //Transform lookAtStoreHouse;
-        //lookAtStoreHouse.SetPositionAndRotation(referenceStartPoint, Quaternion.identity);
+
         storeHouse.transform.LookAt(referenceStartPoint);
 
         var distanceBetweenChains = distanceFromStartPoint / (chainsBetweenStartPointAndStoreHouse + 1);
+
         Vector3 chainSpawnDirection = (storeHouseLocation - referenceStartPoint).normalized;
 
         for (int i = 1; i <= chainsBetweenStartPointAndStoreHouse; i++)
