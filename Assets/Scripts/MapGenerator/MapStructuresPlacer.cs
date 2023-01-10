@@ -21,7 +21,12 @@ public class MapStructuresPlacer : MonoBehaviour
 
     [Header("Storehouse Placer")]
     [SerializeField]
+    float storehouseSize = 10.0f;
+
+    [SerializeField]
     Vector3 referenceStartPoint = new Vector3(0.0f, 0.0f, 0.0f);
+    [SerializeField]
+    Vector3 storehouseLocation;
 
     [SerializeField]
     float distanceFromStartPoint = 100.0f;
@@ -46,10 +51,14 @@ public class MapStructuresPlacer : MonoBehaviour
     public float StartAreaRadius { get => startAreaRadius; private set => startAreaRadius = value; }
     
     public Vector3 StartPoint { get => startPoint; private set => startPoint = value; }
-    
+
     public float LakeSize { get => lakeSize; private set => lakeSize = value; }
-    
+
     public Vector3 LakeLocal { get => lakeLocal; private set => lakeLocal = value; }
+
+    public float StorehouseSize { get => storehouseSize; private set => storehouseSize = value; }
+
+    public Vector3 StorehouseLocation { get => storehouseLocation; private set => storehouseLocation = value; }
 
     void Start()
     {
@@ -74,15 +83,15 @@ public class MapStructuresPlacer : MonoBehaviour
 
         var z = Mathf.RoundToInt(distanceFromStartPoint * Mathf.Cos(angle * Mathf.Deg2Rad));
 
-        Vector3 storeHouseLocation = new Vector3(x, 0, z);
+        StorehouseLocation = new Vector3(x, 0, z);
 
-        var storeHouse = Instantiate(StoreHouseGameObject, storeHouseLocation, Quaternion.identity);
+        var storeHouse = Instantiate(StoreHouseGameObject, storehouseLocation, Quaternion.identity);
 
         storeHouse.transform.LookAt(referenceStartPoint);
 
         var distanceBetweenChains = distanceFromStartPoint / (chainsBetweenStartPointAndStoreHouse + 1);
 
-        Vector3 chainSpawnDirection = (storeHouseLocation - referenceStartPoint).normalized;
+        Vector3 chainSpawnDirection = (storehouseLocation - referenceStartPoint).normalized;
 
         for (int i = 1; i <= chainsBetweenStartPointAndStoreHouse; i++)
         {

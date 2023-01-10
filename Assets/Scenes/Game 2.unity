@@ -148,22 +148,22 @@ PrefabInstance:
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1500
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.80438983
       objectReference: {fileID: 0}
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
@@ -173,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.5941019
       objectReference: {fileID: 0}
     - target: {fileID: 1768683559230809723, guid: c5b223906e0627446929d9c3a0d35ac4,
         type: 3}
@@ -890,6 +890,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: lakeSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: storehouseSize
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: referenceStartPoint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: referenceStartPoint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597459688, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f, type: 3}
+      propertyPath: distanceFromStartPoint
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8526404682974666728, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_Name

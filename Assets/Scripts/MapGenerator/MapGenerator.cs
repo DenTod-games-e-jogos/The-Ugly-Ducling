@@ -8,12 +8,11 @@ public class MapGenerator : BaseGeneration
     MapStructuresPlacer mapPlacer;
     
     [Header("Map Size and Parameters")]
+    [SerializeField] 
+    int nBiomes;
     int mapLimit = 100000;
 
     public int MapLimit { get => mapLimit; private set => mapLimit = value; }
-
-    [SerializeField] 
-    int nBiomes;
 
     public int NBiomes { get => nBiomes; private set => nBiomes = value; }
     
@@ -43,6 +42,10 @@ public class MapGenerator : BaseGeneration
     float startArea;
 
     float startArea2;
+
+    float storehouseArea;
+
+    float storehouseArea2;
 
     short endWall = 7;
     
@@ -211,15 +214,32 @@ public class MapGenerator : BaseGeneration
 
         if (y > height)
         {
-            startArea = ((x * x) - mapPlacer.StartPoint.x) + ((z * z) - mapPlacer.StartPoint.z);
+            // Cria uma área para o start
+            //startArea = ((x * x) - mapPlacer.StartPoint.x) + ((z * z) - mapPlacer.StartPoint.z);
+            Vector2 startArea1 = new Vector2(mapPlacer.StartPoint.x - startArea / 2, mapPlacer.StartPoint.z - startArea / 2);
+            Vector2 startArea2 = new Vector2(mapPlacer.StartPoint.x + startArea / 2, mapPlacer.StartPoint.z + startArea / 2);
 
-            startArea2 = Mathf.Sqrt(startArea);
+            //startArea2 = Mathf.Sqrt(startArea);
 
-            if (startArea2 < mapPlacer.StartAreaRadius)
+            //if (startArea2 < mapPlacer.StartAreaRadius)
+            if (((x > startArea1.x) && (x < startArea2.x)) && ((z > startArea1.y) && (z < startArea2.y)))
             {
                 return air;
             }
 
+            // Cria uma área para o colocar o Storehause
+            //storehouseArea = ((x * x) - mapPlacer.StorehouseLocation.x) + ((z * z) - mapPlacer.StorehouseLocation.z);
+            Vector2 storehouseArea1 = new Vector2(mapPlacer.StorehouseLocation.x - mapPlacer.StorehouseSize / 2, mapPlacer.StorehouseLocation.z - mapPlacer.StorehouseSize / 2);
+            Vector2 storehouseArea2 = new Vector2(mapPlacer.StorehouseLocation.x + mapPlacer.StorehouseSize / 2, mapPlacer.StorehouseLocation.z + mapPlacer.StorehouseSize / 2);
+
+            //storehouseArea2 = Mathf.Sqrt(storehouseArea);
+
+            //if (storehouseArea2 < mapPlacer.StorehouseSize)
+            if (((x > storehouseArea1.x) && (x < storehouseArea2.x)) && ((z > storehouseArea1.y) && (z < storehouseArea2.y)))
+            {
+                return air;
+            }
+            
             if (florestArea >= 0.25f)
             {
                 if (treeTrunk >= 0.75f && height > 0 && y <= height + treeHeight)
