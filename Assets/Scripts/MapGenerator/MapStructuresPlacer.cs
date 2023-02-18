@@ -85,9 +85,26 @@ public class MapStructuresPlacer : MonoBehaviour
 
         StorehouseLocation = new Vector3(x, 0, z);
 
+        var airValue = mapGenerator.GetAirValue();
+
+        int storehouseLevel = 0;
+
+        for (int i = 100; i > -100; i--)
+        {
+            if (mapGenerator.Generation((int)StorehouseLocation.x, i, (int)StorehouseLocation.z) != airValue)
+            {
+                storehouseLevel = i;
+                break;
+            }
+        }
+
         var storeHouse = Instantiate(StoreHouseGameObject, storehouseLocation, Quaternion.identity);
 
         storeHouse.transform.LookAt(referenceStartPoint);
+
+        StorehouseLocation = new Vector3(x, storehouseLevel, z);
+
+        storeHouse.transform.position = StorehouseLocation;
 
         var distanceBetweenChains = distanceFromStartPoint / (chainsBetweenStartPointAndStoreHouse + 1);
 

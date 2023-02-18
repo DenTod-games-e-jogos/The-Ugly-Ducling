@@ -378,4 +378,9 @@ public class MapGenerator : BaseGeneration
         
         return -1;
     }
+
+    public short GetAirValue()
+    {
+        return air;
+    }
 }
