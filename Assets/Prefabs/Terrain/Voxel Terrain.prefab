@@ -90,7 +90,7 @@ MonoBehaviour:
   nBiomes: 4
   frontier: 150
   noiseScale: 150
-  treeHeight: 10
+  treeHeight: 5
   lakeSize: 10
   mangroveTreeHeight: 4
 --- !u!114 &597459688
@@ -105,15 +105,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3cb968684e4ce4abe1010fe56fab65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startAreaRadius: 20
+  startAreaRadius: 5
   startPoint: {x: 0, y: 0, z: 0}
-  lakeSize: 10
+  lakeSize: 50
   lakeLocal: {x: 10, y: 0, z: 10}
-  referenceStartPoint: {x: 30, y: 0, z: 15}
-  distanceFromStartPoint: 20
+  storehouseSize: 85
+  referenceStartPoint: {x: 0, y: 0, z: 0}
+  storehouseLocation: {x: 0, y: 0, z: 0}
+  distanceFromStartPoint: 300
   StoreHouseGameObject: {fileID: 1674802081922600242, guid: dc4f96db9e5c9094b8b0aeba8d96078c,
     type: 3}
-  spwnedStorageHouseLocation: {fileID: 0}
   chainsBetweenStartPointAndStoreHouse: 4
   ChaingGameObject: {fileID: 6798164870752325754, guid: 0c4f2d077b76a68408e35022ffda9692,
     type: 3}

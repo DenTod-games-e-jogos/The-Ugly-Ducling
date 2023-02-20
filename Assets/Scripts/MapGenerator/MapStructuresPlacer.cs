@@ -7,7 +7,7 @@ public class MapStructuresPlacer : MonoBehaviour
 
     [Header("Florest Structures Locations")]
     [SerializeField]
-    float startAreaRadius = 20;
+    float startAreaRadius = 5;
 
     [SerializeField]
     Vector3 startPoint = new Vector3(0.0f, 0.0f, 0.0f);

@@ -26,11 +26,11 @@ public class MapGenerator : BaseGeneration
 
     [Header("Florest Parameters")]
     [SerializeField] 
-    float treeHeight = 10;
+    float treeHeight = 5;
 
     [Header("Purple Mangrove Parameters")]
     [SerializeField]
-    float lakeSize = 10f;
+    float lakeSize = 5.0f;
     
     [SerializeField]
     float mangroveTreeHeight = 4f;
@@ -214,7 +214,7 @@ public class MapGenerator : BaseGeneration
 
         if (y > height)
         {
-            // Cria uma área para o start
+            // Cria uma ï¿½rea para o start
             //startArea = ((x * x) - mapPlacer.StartPoint.x) + ((z * z) - mapPlacer.StartPoint.z);
             Vector2 startArea1 = new Vector2(mapPlacer.StartPoint.x - startArea / 2, mapPlacer.StartPoint.z - startArea / 2);
             Vector2 startArea2 = new Vector2(mapPlacer.StartPoint.x + startArea / 2, mapPlacer.StartPoint.z + startArea / 2);
@@ -227,7 +227,7 @@ public class MapGenerator : BaseGeneration
                 return air;
             }
 
-            // Cria uma área para o colocar o Storehause
+            // Cria uma ï¿½rea para o colocar o Storehause
             //storehouseArea = ((x * x) - mapPlacer.StorehouseLocation.x) + ((z * z) - mapPlacer.StorehouseLocation.z);
             Vector2 storehouseArea1 = new Vector2(mapPlacer.StorehouseLocation.x - mapPlacer.StorehouseSize / 2, mapPlacer.StorehouseLocation.z - mapPlacer.StorehouseSize / 2);
             Vector2 storehouseArea2 = new Vector2(mapPlacer.StorehouseLocation.x + mapPlacer.StorehouseSize / 2, mapPlacer.StorehouseLocation.z + mapPlacer.StorehouseSize / 2);
