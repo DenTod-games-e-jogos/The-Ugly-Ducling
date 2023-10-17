@@ -112,5 +112,6 @@
         "WASD"
     ],
     "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "dotnet.preferCSharpExtension": true
 }
