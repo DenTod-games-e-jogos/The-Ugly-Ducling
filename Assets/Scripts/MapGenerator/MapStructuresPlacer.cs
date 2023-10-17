@@ -94,6 +94,7 @@ public class MapStructuresPlacer : MonoBehaviour
             if (mapGenerator.Generation((int)StorehouseLocation.x, i, (int)StorehouseLocation.z) != airValue)
             {
                 storehouseLevel = i;
+                
                 break;
             }
         }
