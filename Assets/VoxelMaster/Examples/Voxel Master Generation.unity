@@ -351,6 +351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voxel Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 8526404682974666729, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: c9345f76be5146645af2fde03c9e65a5, type: 2}
     - target: {fileID: 8526404682974666734, guid: 9cbdfd558fd5eb24cb30ff88d5f8b67f,
         type: 3}
       propertyPath: m_RootOrder
