@@ -10,6 +10,7 @@ public class MapGenerator : BaseGeneration
     [Header("Map Size and Parameters")]
     [SerializeField] 
     int nBiomes;
+    
     int mapLimit = 100000;
 
     public int MapLimit { get => mapLimit; private set => mapLimit = value; }
@@ -273,7 +274,6 @@ public class MapGenerator : BaseGeneration
 
         float florestArea = Mathf.PerlinNoise(x, z);
 
-        // Define local do lago
         if ((x > mapPlacer.LakeLocal.x - mapPlacer.LakeSize) && (x < mapPlacer.LakeLocal.x + mapPlacer.LakeSize) &&
         (z > mapPlacer.LakeLocal.z - mapPlacer.LakeSize) && (z < mapPlacer.LakeLocal.z + mapPlacer.LakeSize))
         {
